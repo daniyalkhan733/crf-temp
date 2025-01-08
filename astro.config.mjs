@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
-// import cloudflare from '@astrojs/cloudflare';
+import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
-// import netlify from '@astrojs/netlify';
 
 
 // https://astro.build/config
@@ -13,5 +12,6 @@ export default defineConfig({
           destination: '/about-us'
         }  },
   output: "static",
+  // adapter: cloudflare(),
   site: 'https://careandrelief.uk'
 });
