@@ -1,0 +1,413 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Help Build a Masjid | Donate to Build a Mosque Today | CRF";
+const description =
+  "Join CRF in build a masjid. With your generous support, we've completed over 50+ mosques. Contribute to help expand these projects and strengthen communities.";
+const keywords =
+  "Build a Masjid,Build a Mosque,Build A Mosque Charity,Mosque Donation,Masjid Donation ";
+const pageImage ="";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/images/appeals/masjid-4.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+  </style>
+  <main>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals" class="single">Appeals</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals/build-a-masjid" class="single"
+                  >Build A Masjid
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">
+            Build A Masjid
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="CRF Mosque Appeal"
+      description="Build A Masjid Donation"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                  The Importance of CRF Build A Masjid Appeal
+                </h2>
+                <p class="pera-subtitle mb-15">
+                  Masjids are must and a worship place for Muslims, yet many
+                  regions do not have access to one for prayer and community
+                  gatherings. Care & Relief Foundation's Build A Masjid
+                  initiative meets this urgent need by building them where
+                  they're most needed - making an impactful statement about its
+                  commitment to community welfare. <br /><br />
+                  This CRF Build A Masjid project not only provides a place of worship,
+                  but it also strengthens entire communities through providing space
+                  for islamic education, social gatherings, and spiritual growth.
+                  <br /><br />
+                  We aim to change lives through creating lasting spiritual impact;
+                  your support can ensure each masjid becomes a place of faith and
+                  community for generations. <br /><br />
+                  Your donations can help build masjids that provide spaces for prayer,
+                  learning and community harmony - giving countless individuals access
+                  to religious facilities that will benefit from your contribution.
+                </p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill">Donate Now</a
+                >
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">
+                    Empowering Through Build A Masjid Project:
+                  </h4>
+                  <p class="subtitle">
+                    Join our mission to build Masjids in vulnerable communities
+                    through our Build A Masjid project. At Care & Relief, we
+                    believe that having a place of worship is a fundamental
+                    right.
+                  </p>
+                  <div class="divider"></div>
+                  <p class="subtitle">
+                    Building Masjids through charitable work is an impactful way
+                    to make a meaningful contribution that supports those in
+                    need. Offering places of worship is central to encouraging
+                    generosity and kindness within society.
+                  </p>
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4>
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">How You Can Help Our Masjid Project</h4>
+                    <p class="pera">
+                      Follow these four simple steps to make your donation to
+                      CRF:
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">Select the appeal</li>
+                      <li class="list">Enter the donation amount</li>
+                      <li class="list">Provide your information</li>
+                      <li class="list">Proceed with payment</li>
+                    </ul>
+                    <p class="subtitle">
+                      Your donation will be securely processed, and you'll
+                      receive a receipt from Care & Relief Foundation on your
+                      email within minutes. <br /><br />
+                      With your support, our expert team will find the where most
+                      needed area for Masjids and build a masjid with your provided
+                      details which ultimately help for the generations to come.
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What is Build A Masjid Project?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Build A Masjid project from Care and Relief Foundation is an
+                    initiative that allows donors to contribute to the
+                    construction of a mosque in areas where there is a need for
+                    a place of worship and community gathering and islamic
+                    teachings.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I contribute to building a masjid?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can contribute by making a donation through our website
+                    or phone calls, or setting up a monthly donation plan, or
+                    sponsoring specific parts of the masjid, such as the prayer
+                    hall, minaret, or wudu area, etc.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >Can I sponsor the entire cost of building a masjid?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, if you wish to sponsor the entire cost of a masjid,
+                    please contact us directly to discuss the specific details
+                    and options available.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >Who can I contact for more information?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    For further details, please contact our support team by
+                    email, phone call, or visit <a href="/contact-us"
+                      >contact us</a
+                    > contact us page and submit your details to connect. We're here
+                    to assist with any questions you have.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

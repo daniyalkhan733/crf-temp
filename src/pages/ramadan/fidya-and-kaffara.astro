@@ -1,0 +1,456 @@
+---
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Fidya and Kaffara | Pay Fidya and Kaffara | CRF";
+const description =
+  "Pay Fidya and Kaffara with Care and Relief Foundation. Your donations help feed the hungry and provide relief to those in need. Donate now!";
+const keywords =
+  "Fidya and Kaffarah,what is fidya in islam, pay fidya, pay kaffarah, kaffarah for breaking fast";
+  const pageImage="";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <Breadcrumb
+      title="Fidya and Kaffara"
+      link="/assets/images/appeals/masjid-4.png"
+      image="/assets/images/breadcrumb-bg.jpg"
+    />
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="CRF Fidya And Kaffara Appeal"
+      description="Fidya and Kaffara"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                  Missed Fasts? Pay Fidya & Kaffarah According to Islam
+                </h2>
+                <p class="pera-subtitle mb-15">
+                  Fasting during Ramadan is a sacred obligation for Muslims,
+                  serving as a means of spiritual purification, self-discipline,
+                  and closeness to Allah. However, there are times when someone
+                  might miss a fast or break it, intentionally or
+                  unintentionally. In such cases, Islam provides a way to
+                  compensate through Fidya and Kaffarah.
+                </p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill">Donate Now</a
+                >
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">What are Fidya and Kaffarah in Islam?</h4>
+                  <p class="subtitle">
+                    Fidya and Kaffarah are two important concepts in Islam that
+                    help Muslims make amends for missed or broken fasts. While
+                    both involve compensation, they apply in different
+                    situations.
+                    <br /><br />
+                    Fidya is paid when someone cannot fast due to a valid reason
+                    according to Sharia (Islamic Law), such as chronic illness, old
+                    age, or pregnancy, and cannot make up for the missed fast later.
+                    The compensation involves feeding one poor person for each missed
+                    fast.
+                  </p>
+                  <div class="divider"></div>
+                  <p class="subtitle">
+                    Kaffarah is required when a fast is deliberately broken
+                    without a valid reason. To compensate, one must either fast
+                    for 60 consecutive days or feed 60 needy individuals.
+                    <br /><br />
+                    Understanding the difference between these two forms of compensation
+                    is crucial for fulfilling your obligations correctly.
+                  </p>
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <!-- <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4> -->
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">What Is Fidya in Islam?</h4>
+                    <p class="pera">
+                      What is Fidya in Islam? Fidya is a form of compensation
+                      for missed fasts that cannot be made up later. It applies
+                      to individuals who have valid reasons for not fasting,
+                      such as chronic illness, advanced age, or pregnancy.
+                      Instead of fasting, these individuals are required to
+                      provide food to a needy person for each missed fast. This
+                      act reflects the spirit of Islam by combining personal
+                      accountability with care for the less fortunate.
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;">Definition:</span>
+                        Fidya in Islam is a compensation for missed fasts that cannot
+                        be made up later.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Eligibility:</span>
+                        It applies to individuals with valid reasons for not fasting,
+                        such as chronic illness, old age, or pregnancy.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Requirement:</span>
+                        Instead of fasting, those eligible must provide food to a
+                        needy person for each missed fast.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Purpose:</span>
+                        Fidya emphasizes personal accountability while fostering
+                        care for the less fortunate, reflecting Islamic values.
+                      </li>
+                    </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">Pay Kaffarah for Breaking Fast</h4>
+                    <p class="pera">
+                      Sometimes, a fast may be deliberately broken without a
+                      valid reason, which requires Kaffarah as compensation.
+                      Kaffarah involves a more significant atonement because
+                      breaking a fast intentionally is a serious matter. The two
+                      main options for Pay Kaffarah are:
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">Fasting for 60 consecutive days.</li>
+                      <li class="list">Feeding 60 needy people.</li>
+                    </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      Why Pay Fidya and Kaffarah Through Care and Relief
+                      Foundation?
+                    </h4>
+                    <p class="pera">
+                      Care and Relief Foundation provides a reliable and
+                      efficient way to fulfill your Fidya and Kaffarah
+                      obligations. Here’s why you should consider supporting our
+                      appeal:
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >Transparent Distribution:</span
+                        > We ensure that your Fidya and Kaffarah reach those who
+                        need it most. Our team works tirelessly to identify and support
+                        vulnerable individuals and families.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Ease of Payment:</span> Paying
+                        Fidya and Kaffarah through Care and Relief Foundation (An
+                        Islamic Charity in the UK) is straightforward, allowing you
+                        to focus on your spiritual duties while we handle the logistics
+                        according to the law of Islam.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >Transparent Distribution:</span
+                        >
+                        Your contributions not only help you fulfill your religious
+                        obligations but also bring relief to individuals struggling
+                        with hunger and poverty.
+                      </li>
+                    </ul>
+                    <p class="subtitle">
+                      When you choose Care and Relief Foundation, you are
+                      assured that your payments are handled with care,
+                      integrity, and adherence to Islamic principles.
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What is Fidya?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Fidya is a form of compensation given by individuals who are unable to fast during Ramadan due to illness, pregnancy, breastfeeding, or other valid reasons. It involves feeding a poor person for each day of fasting missed.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  What is Kaffara?                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Kaffara is a compensation given by individuals who intentionally break their fast during Ramadan, either by eating, drinking, or engaging in other activities that invalidate the fast. It typically involves fasting for 60 consecutive days or feeding 60 poor people.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >How much is the Fidya and Kaffara amount for 2025?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Fidya and Kaffara amounts are based on the local cost of providing a meal to a poor person. The exact amount for 2025 will be announced by the Care & Relief Foundation closer to Ramadan, based on current food prices.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >How can I pay Fidya & Kaffara through the Care & Relief Foundation?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can calculate & pay Fidya and Kaffara by donating through our website. The foundation ensures that your donation reaches those in need by providing meals to the poor.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    >Can I pay Fidya & Kaffara on behalf of my family?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, you can pay Fidya and Kaffara on behalf of a family member, friend, or loved one who is unable to fast.. Simply provide the necessary details of them when making your donation.
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

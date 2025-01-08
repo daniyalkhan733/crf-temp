@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+
+---
+<Layout>
+    <style>       
+        .container-404 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          text-align: center;
+          background-image: url("/assets/images/404.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+        @media screen and (max-width: 768px) {
+          .container-404 {
+            background-image: url("/assets/images/404-mobile.jpg");
+        }
+            
+        }
+
+ 
+        .btn-home {
+          background-color: #1A6E9C; /* Example button color */
+          color: #fff;
+          border: none;
+          padding: 20px 40px;
+          font-size: 2rem;
+          font-weight: 600;
+          position: absolute;
+          border-radius: 15px;
+          top: 85%;
+          left: 20%;
+        }
+        @media screen and (max-width: 768px) {
+          .btn-home {
+            position: ;
+            top: 100%;
+            left: 10%;
+            /* padding: 10px 20px;
+            font-size: 1rem; */
+        }
+            
+        }
+      </style>
+       <div class="container-404">
+        <a href="/" class="btn-home">Go To Home</a>
+
+      </div>
+
+</Layout>

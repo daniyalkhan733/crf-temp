@@ -1,0 +1,461 @@
+---
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Medical Aid Project - Provide Medicare to Those Who Need It";
+const description =
+  "Support Care and Relief Foundation Medical Aid Project to provide medicare to low incomes families & children who lost thier parents. Act Today";
+const keywords =
+  "Medical Aid, medical aid charity, health aid UK, health charities UK, Islamic care";
+  const pageImage ="";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <Breadcrumb
+      title="Medical Aid Appeal"
+      link="/assets/images/appeals/masjid-4.png"
+      image="/assets/images/breadcrumb-bg.jpg"
+    />
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="CRF Medical Aid Appeal"
+      description="Health Donation"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                  Care and Relief Foundation: Empowering Communities with
+                  Essential Medical Aid
+                </h2>
+                <p class="pera-subtitle mb-15">
+                  Imagine falling sick but having no money to go to the doctor,
+                  no hospital to visit, and no medication to relieve your pain.
+                  Millions of people including low-income families and children
+                  who lost their parents, across uk face the same situation
+                  right now, this is their daily reality. <br /><br />
+                  At Care and Relief Foundation, we strongly believe that access
+                  to<span style="font-weight: 600;">medical aid</span> is a fundamental
+                  human right all across the UK. However, countless individuals in
+                  the UK face significant barriers to accessing even the most basic
+                  healthcare services.
+                </p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill"
+                  >Donate Now
+                </a>
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">
+                    Our Vision for the Medical Aid Programme
+                  </h4>
+                  <p class="subtitle">
+                    Our vision is to ensure that every individual across the UK,
+                    regardless of their circumstances, has access to essential
+                    healthcare. We strive to eliminate barriers to medical
+                    services, improve community well-being, and create a future
+                    where no one suffers due to a lack of medical care. Through
+                    compassion, dedication, and your support, we aim to build a
+                    healthier and more equitable society.
+                  </p>
+                  <div class="divider"></div>
+
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <!-- <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4> -->
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">The Impact of Your Donations</h4>
+                    <p class="pera">
+                      Your donations to Care and Relief Foundation’s medical Aid
+                      project are making a significant difference in the lives
+                      of vulnerable individuals across the UK. We are able to
+                      provide vital support, including emergency medical
+                      equipment, etc. These programs are transforming lives,
+                      offering hope to the people and relief to those in need.
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;">Save Lives : </span>
+                        Your donation provides essential healthcare, saving lives
+                        by ensuring treatment and medicines reach those in need.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Improve Health : </span>
+                        Support vulnerable communities by improving access to medical
+                        care, fostering healthier and more resilient populations.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Fight Poverty :</span>
+                        Help break the poverty cycle by addressing healthcare barriers,
+                        enabling individuals to focus on education and livelihoods.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;">Build Futures :</span>
+                        Empower communities with preventive care and long-term solutions,
+                        creating lasting impacts for generations to come.
+                      </li>
+                    </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      Ways to Donate for the Medical Aid
+                    </h4>
+                 
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >1- One-Time Donation:
+                        </span>
+                        A one-time donation ensures that individuals and families
+                        in need receive a hot, nutritious meal when they need it
+                        the most. Every contribution matters.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >2- Online Donations:
+                        </span>
+                        Donate easily and securely through our online platform. Whether
+                        it's a one-time or recurring donation, your online contribution
+                        helps provide immediate relief to those in need.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >3- Monthly Contribution:
+                        </span>
+                        By committing to a monthly donation, you can help provide
+                        continuous support, ensuring that no one goes without food.
+                        Your ongoing support brings hope every day.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >4- Zakat Donations :</span
+                        >
+                        Fulfill your Zakat obligation by donating to the Cooked Food
+                        Appeal. Your contribution helps feed the most vulnerable,
+                        improving their health and quality of life.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >5- Sadaqah Giving :</span
+                        >
+                        Give Sadaqah to provide essential meals to those suffering
+                        from hunger. Your act of charity brings both physical relief
+                        and spiritual rewards.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >6- Corporate Donations :</span
+                        >
+                        Partner with CRF as a corporate sponsor. Your company's donation
+                        can feed hundreds of families and make a lasting difference
+                        in the lives of those struggling with hunger).
+                      </li>
+                    </ul>
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      From when CRF helps vulnerable families?
+                    </h4>
+                    <p class="pera">
+                      <span style="font-weight: 600;">Since 2012</span>, Care and Relief Foundation has been working effortlessly to fight against poverty and provide essential health and medical care to vulnerable communities across the UK. Our initiatives have impacted millions of lives by addressing critical healthcare needs and offering hope where it’s needed most. <br><br>
+                      Our approach to healthcare goes beyond immediate needs. We emphasize preventive measures and sustainable solutions to ensure long-term community well-being. From educating families on proper nutrition to providing balanced meals for children to combat malnutrition, our programs are designed to build healthier futures. <br><br>
+                      By addressing urgent healthcare challenges and implementing sustainable solutions, Care and Relief Foundation is creating a lasting impact and transforming communities across the UK. Together, we can ensure a brighter, healthier future for everyone who are facing heath issue across uk.
+                    </p>                      
+
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What is the Medical Aid Appeal?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Medical Aid Appeal is a fundraising initiative by the Care & Relief Foundation aimed at providing essential medical support to vulnerable communities, both in the UK and abroad, by funding healthcare, medicine, and treatments.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  How can I contribute to the Medical Aid Appeal?                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can contribute by making a one-time donation or setting up a recurring donation through our website. Your support will directly help fund critical medical supplies and treatments for those in need.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >What types of medical assistance does the Medical Aid Appeal provide?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The appeal provides a variety of medical support, including medicines, medical equipment, vaccinations, healthcare clinics, and emergency medical relief in areas affected by crises.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >Where does the Medical Aid Appeal operate?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Care & Relief Foundation provides medical aid in regions where healthcare is scarce or inaccessible, both locally in the UK and in underserved communities around the world.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    >How is the Medical Aid Appeal different from other medical charities?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Care & Relief Foundation focuses on both urgent medical relief and long-term healthcare solutions. We prioritize sustainable healthcare infrastructure, such as establishing clinics and training local healthcare professionals, alongside providing immediate aid.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

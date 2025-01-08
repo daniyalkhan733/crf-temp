@@ -1,0 +1,33 @@
+---
+const { date, day, roza, zone, fajr, sunrise, dhuhr, asr, iftar ,isha} = Astro.props;
+
+---
+
+
+<tr class="table-row">
+    <td>{date}</td>
+    <td>{day}</td>
+    <td>{roza}</td>
+    <td>{zone}</td>
+    <td>{fajr}</td>
+    <td>{sunrise}</td>
+    <td>{dhuhr}</td>
+    <td>{asr}</td>
+    <td>{iftar}</td>
+    <td>{isha}</td>
+
+  </tr>
+  <style>
+
+    .table-row {
+      border-bottom: 1px solid #e0e0e0;
+      background-color: white;
+      padding: 2px;
+      border-radius: 25px;
+      border: black   2px solid;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+  </style>

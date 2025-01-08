@@ -1,0 +1,145 @@
+---
+import Layout from "./Layout.astro";
+const {frontmatter} = Astro.props;
+---
+<Layout>
+    <main>
+        <!-- Breadcrumb Area S t a r t -->
+        <section class="breadcrumb-section breadcrumb-bg">
+          <div class="container">
+            <div class="breadcrumb-text">
+              <nav aria-label="breadcrumb" class="breadcrumb-nav wow fadeInUp" data-wow-delay="0.0s">
+                <ul class="breadcrumb listing">
+                  <li class="breadcrumb-item single-list"><a href="/" class="single">Home</a></li>
+                  <li class="breadcrumb-item single-list" aria-current="page"><a href="javascript:void(0)" class="single">Blog </a></li>
+                </ul>
+              </nav>
+              <h1 class="title wow fadeInUp" data-wow-delay="0.1s">blog details</h1>
+            </div>
+          </div>
+        </section>
+        <!-- End-of Breadcrumb Area -->
+  
+        <!-- Blog-details S t a r t -->
+        <section class="blog-details top-bottom-padding2">
+          <div class="container">
+            <div class="row gy-24">
+              <div class="col-xxl-9 col-xl-8 col-lg-8">
+                <div class="single-blog">
+                  <div class="blog-img">
+                    <a href="javascript:void(0)">
+                      <img src={frontmatter.image} class="img-fluid w-100" alt="img">
+                    </a>
+                  
+                  </div>
+                  <div class="blog-info">
+                    <div class="blog-info-title">
+                      <div class="flex gap-16 mb-20 align-items-center">
+                        <div class="user flex gap-10 align-items-center">
+                          <i class="ri-user-line"></i>
+                          <p class="info">By: admin</p>
+                        </div>
+                        <div class="donate flex gap-10 align-items-center">
+                          <i class="ri-chat-3-line"></i>
+                          <p class="info">{frontmatter.title}</p>
+                          
+                        </div>
+                        
+                      </div>
+                      <h4 class="title">{frontmatter.title}</h4>
+
+                     
+                    
+                    <slot/>
+                    </div>
+                    <!-- blog info -->
+                   
+                  </div>
+                </div>
+          
+      
+              </div>
+              <div class="col-xxl-3 col-xl-4 col-lg-4">
+                <div class="right-element">
+  
+                  <!-- Search Box -->
+              
+  
+                  <!-- Related post -->
+                  <div class="related-post-section">
+                    <p class="pera text-capitalize">Related post</p>
+                    <div class="dotted">
+                      <div class="active-dot"></div>
+                      <div class="inactive-dot"></div>
+                    </div>
+                    <div class="related-box">
+                      <div class="single-post">
+                        <div class="post-img">
+                          <a href="blog-details.html"><img src="/assets/images/blogs/water-blog.png" alt="img"></a>
+                        </div>
+                        <div class="post-info">
+                          <div class="date-time">
+                            <i class="ri-time-line"></i>
+                            <p class="pera">November 28, 2023</p>
+                          </div>
+                          <h4 class="title"><a href="/blogs/commitment-to-water-access">Commitment to Water Access</a></h4>
+                        </div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="single-post">
+                        <div class="post-img">
+                          <a href="blog-details.html"><img src="/assets/images/blogs/food-pack-blog.png" alt="img"></a>
+                        </div>
+                        <div class="post-info">
+                          <div class="date-time">
+                            <i class="ri-time-line"></i>
+                            <p class="pera">November 28, 2023</p>
+                          </div>
+                          <h4 class="title"><a href="/blogs/nourishing-the-hungry-across-the-globe">Nourishing the Hungry Across the Globe</a></h4>
+                        </div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="single-post">
+                        <div class="post-img">
+                          <a href="blog-details.html"><img src="/assets/images/blogs/animal-blog.png" alt="img"></a>
+                        </div>
+                        <div class="post-info">
+                          <div class="date-time">
+                            <i class="ri-time-line"></i>
+                            <p class="pera">November 28, 2023</p>
+                          </div>
+                          <h4 class="title"><a href="/blogs/the -blessings-of-animal-sadaqah">The Blessings of Animal Sadaqah</a></h4>
+                        </div>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="single-post">
+                        <div class="post-img">
+                          <a href="blog-details.html"><img src="/assets/images/blogs/cooked-food-blog.png" alt="img"></a>
+                        </div>
+                        <div class="post-info">
+                          <div class="date-time">
+                            <i class="ri-time-line"></i>
+                            <p class="pera">November 28, 2023</p>
+                          </div>
+                          <h4 class="title"><a href="/blogs/the-crf-cooked-meal-initiative">Feeding Hope: The CRF Cooked Meal Initiative</a></h4>
+                        </div>
+                      </div>
+                   
+                    </div>
+                  </div>
+  
+                  <!-- Tag -->
+              
+  
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- End-of Blog-details -->
+  
+      
+      </main>
+</Layout>

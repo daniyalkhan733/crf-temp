@@ -1,0 +1,294 @@
+---
+import { SEO } from "astro-seo";
+import Layout from "../../layouts/Layout.astro";
+import RamadanTable from "../../components/RamadanTable.astro";
+const title = "Download Ramadan 2025 Timetable | CRF";
+const description = "Download Ramadan timetable 2025 as per the East London Mosque, applicable exclusively to London. start/end dates are fixed by the sighting of the moon.";
+const pageImage = "";
+const keywords = "ramadan timetable ,ramadan timetable 2025,ramadan 2025 timetable,Ramadan timing,when does ramadan end";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/images/breadcrumb/about-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+  </style>
+  <section class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+      <div class="breadcrumb-text">
+        <nav
+          aria-label="breadcrumb"
+          class="breadcrumb-nav wow fadeInUp"
+          data-wow-delay="0.0s"
+        >
+          <ul class="breadcrumb listing">
+            <li class="breadcrumb-item single-list">
+              <a href="/" class="single">Home</a>
+            </li>
+            <li class="breadcrumb-item single-list" aria-current="page">
+              <a href="/ramadan" class="single">Ramadan</a>
+            </li>
+            <li class="breadcrumb-item single-list" aria-current="page">
+              <a href="/ramadan/ramadan-timetable" class="single"
+                >Ramadan TimeTable</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <h1 class="title wow fadeInUp" data-wow-delay="0.1s">
+          Ramadan Timetable
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container mt-5">
+      <div
+        class="section-tittle container p-2 mt-4"
+        style="text-align: center;"
+      >
+        <p class="pb-2">
+          Discover the accurate Ramadan Timetable 2025 based on the East London
+          Mosque, applicable only to London. This Ramadan timetable is
+          specifically for the year 2025.
+
+          <br /><br />
+
+          You can now download our Ramadan Timetable 2025 to help you track your
+          fasting during this blessed month.
+        </p>
+        <div class="text-center p-4">
+          <a href="/assets/crf-ramadan-calendar.pdf" target="_blank" class="btn-primary-fill pill-btn">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-download"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                ></path>
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+                ></path>
+              </svg></span
+            > &nbsp Download Ramadan Time Table 2025</a
+          >
+        </div>
+        <h2 class="title font-700" style="color: #156E9D;">
+          Ramadan Timetable 2025
+        </h2>
+      </div>
+      <RamadanTable />
+      <div class="text-center p-4">
+        <a href="/assets/crf-ramadan-calendar.pdf" target="_blank" class="btn-primary-fill pill-btn">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-download"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+              ></path>
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+              ></path>
+            </svg></span
+          > &nbsp Download Ramadan Time Table 2025</a
+        >
+      </div>
+    </div>
+  </section>
+  <section>
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold" style="color: #156E9D;">
+        Fasting in Ramadan : A Holy Act of Devotion and Self-Discipline
+      </h2>
+    </div>
+
+    <p>
+      The holy month of Ramadan stands as one of the most significant times in
+      the Islamic calendar. Ramadan devoted to fasting, heartfelt prayers,
+      worship, recitation the Qur’an, and deep self-reflection. Ramadan invites
+      Muslims to refrain from sinful behavior and deepen their connection with
+      Allah (SWT).
+    </p>
+
+    <p>
+      Fasting is a fourth pillar of Islam, a profound act of worship that brings
+      massive spiritual rewards when practiced in accordance with the Sunnah and
+      the teachings of Islam. This sacred obligation is a testament to
+      self-discipline, devotion, and obedience to Allah’s commands.
+    </p>
+
+    <div class="mt-4">
+      <h4 class="fw-bold">
+        Abu Huraira related that the Prophet (peace and blessings be upon him)
+        said :
+      </h4>
+      <blockquote class="blockquote">
+        <p>
+          “Whoever fasts during Ramadan with faith and seeking his reward from
+          Allah will have his past sins forgiven. Whoever prays during the
+          nights in Ramadan with faith and seeking his reward from Allah will
+          have his past sins forgiven. And he who passes Lailat Al-Qadr in
+          prayer with faith and seeking his reward from Allah will have his past
+          sins forgiven.” (Bukhari, Muslim)
+        </p>
+      </blockquote>
+
+      <p class="fw-bold">In another reference for Ramadan:</p>
+      <h4 class="fw-bold">
+        Abu Huraira related that the Prophet (peace be upon him) said:
+      </h4>
+      <blockquote class="blockquote">
+        <p>
+          Allah the Majestic and Exalted said: “Every deed of man will receive
+          ten to 700 times reward, except Siyam (fasting), for it is for Me and
+          I shall reward it (as I like). There are two occasions of joy for one
+          who fasts: one when he breaks the fast and the other when he will meet
+          his Lord” (Muslim). <br /><br />
+          Fasting is a profound act of worship that allows self-reflection and strengthens
+          faith, serving as a pathway for spiritual growth and renewal. May Ramadan
+          2025 bring countless blessings, ease, and peace to all of the muslims around
+          the world.
+        </p>
+      </blockquote>
+    </div>
+
+    <div class="mt-5">
+      <h2 class="fw-bold" style="color: #156E9D;">
+        When is Ramadan 2025 in the UK?
+      </h2>
+      <p>
+        The Islamic calendar follows the lunar cycle, which means the start of
+        Ramadan timings & date occurs 10 days earlier compare to every previous
+        year. So, when will Ramadan 2025 begin & when does ramadan end? In the
+        UK, Ramadan 2025 is expected to start on <span style="font-weight: 600;"
+          >Friday, 28 February 2025</span
+        > , and fasting will end on the evening of <span
+          style="font-weight: 600;"
+        >
+          Sunday, 30 March 2025</span
+        >. However, these dates may vary depending on the official moon sighting
+      </p>
+    </div>
+
+    <div class="mt-4">
+      <h2 class="fw-bold" style="color: #156E9D;">
+        Key Ramadan Timetable 2025 & dates to keep in mind include:
+      </h2>
+      <ol>
+        <br />
+        <li>
+          <span style="font-weight: 600;">28 February</span> – The first day of fasting
+          (Sawm) for Ramadan 2025
+        </li>
+        <li>
+          <span style="font-weight: 600;">28 February</span> – Laylat al-Qadr 2025
+          (The Night of Power)
+        </li>
+        <li>
+          <span style="font-weight: 600;">30 March</span>
+          – Eid al-Fitr 2025 (The festival marking the end of Ramadan)
+        </li>
+      </ol>
+    </div>
+    <div class="mt-5">
+      <h2 class="fw-bold" style="color: #156E9D;">What is Ashra in Ramadan?</h2>
+      <p>
+        An Ashra in Ramadan refers to a set of ten days, dividing the holy month
+        into three parts: Mercy (Rahmah), Forgiveness (Maghfirah), and Salvation
+        from Hellfire, each with unique spiritual significance.
+      </p>
+    </div>
+    <div class="mt-5">
+      <h2 class="fw-bold" style="color: #156E9D;">
+        The Importance of Ashra’s in Ramadan
+      </h2>
+      <div class="p-2"><h5>1st Ashra of Ramadan</h5>
+        <p>
+          The 1st Ashra signifies Mercy (Rahmah) from Allah. It’s a time to seek
+          His compassion through fasting, prayers, and good deeds while showing
+          kindness and mercy to those around us.
+        </p></div>
+      
+        <div class="p-2">   <h5>2nd Ashra of Ramadan</h5>
+          <p>
+            The 2nd Ashra represents Forgiveness (Maghfirah), urging us to seek
+            Allah's pardon and forgive others. These days encourage spiritual
+            purification and helping those in need through acts of charity and
+            kindness.
+          </p></div>
+   <div class="p-2">   <h5>3rd Ashra of Ramadan</h5>
+    <p>
+      The 3rd Ashra symbolizes Salvation from Hellfire, focusing on heartfelt
+      prayers and charity. It's a time to seek protection from Hellfire while
+      offering support to those enduring hardships.
+    </p></div>
+   
+    </div>
+  </div>
+</section>
+</Layout>

@@ -1,0 +1,326 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Pay Zakat Online to Change Lives and Support the Needy | CRF";
+const description =
+  "Pay your Zakat online with CRF to support those in need. Your donation helps transform lives, providing essential aid, and healthcare to vulnerable communities.";
+const pageImage ="";
+const keywords = "Pay Zakat Online,Zakat,Pay Zakat,Calculate Your Zakat,What is Zakat";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("/assets/images/breadcrumb/zakat-bg.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 100%;
+opacity: 1;
+-webkit-transition: opacity 0.3s ease;
+transition: opacity 0.3s ease;
+z-index: -1;
+}
+  </style>
+  <main>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals" class="single">Appeals </a>
+              </li>   <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals/zakat" class="single">Zakat </a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Pay Zakat Online</h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+    <DonationCard programId={[7, 14, 15,11,21,24,31,17]} />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/sadaqah-4.jpg"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+            <div class="col-md-7 mb-4 align-self-center ">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600">Our Impact</span>
+                <h2 class="title font-700 pb-15">Zakat: The Third Pillar of Islam</h2>
+                <p class="pera-subtitle mb-15"> Zakat, the third pillar of Islam, is a mandatory act of worship
+                  for all eligible Muslims, signifying their duty to purify their
+                  wealth by helping those in need. It is not merely a charitable
+                  contribution but a compulsory act that embodies social
+                  responsibility and justice. <br><br> The term 'Zakat' itself means
+                  'purification' and 'growth,' indicating that giving Zakat
+                  purifies one's income and wealth from the excessive desire of
+                  materialism and encourages a balanced and just economic system. Muslims are required to give 2.5% of their accumulated wealth
+                  annually to those eligible to receive it. This wealth includes
+                  savings, investments, gold, silver, and other financial assets
+                  that have been held for a lunar year.</p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a href="https://crf-donate.tscube.co.in/" class="btn btn-primary-fill">Donate Now</a>
+              </div>
+             
+            </div>
+   
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/oQw1EwgrGrk?si=F_0f5xUQyV_581HC"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">Eligibility and Calculation of Zakat</h4>
+                  <p class="subtitle">
+                    To be liable to pay Zakat, a Muslim must meet specific
+                    conditions. Firstly, they must be of sound mind and reached
+                    puberty. The wealth must be above the Nisab threshold, which
+                    is the minimum amount of wealth one must have before they
+                    are liable to pay Zakat.
+                  </p>
+                  <div class="divider"></div>
+                  <p class="subtitle">
+                    The Nisab is calculated based on the current value of 87.48
+                    grams of gold or 612.36 grams of silver.The calculation of
+                    Zakat involves assessing all the assets that have been held
+                    for one lunar year.These assets include cash, savings,
+                    investments, business commodities, and other forms of
+                    wealth.
+                  </p>
+                  <p class="subtitle">
+                    Debts and liabilities can be deducted from this total before
+                    calculating the 2.5% that is due. It’s essential to make
+                    accurate calculations to ensure the correct amount is given,
+                    thus fulfilling one’s religious obligation correctly.
+                  </p>
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <h4 class="title">
+                      The Beneficiaries of Zakat: Who Should Receive It?
+                    </h4>
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">donation</h4>
+                    <p class="pera">
+                      The Qur'an explicitly outlines the categories of
+                      individuals who are eligible to receive Zakat in Surah
+                      At-Tawbah (9:60). These categories ensure that Zakat
+                      reaches those who are genuinely in need and can benefit
+                      from it most. The recipients include:
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        The Poor (Al-Fuqara'): Those without any means of
+                        livelihood and no material possessions.
+                      </li>
+                      <li class="list">
+                        The Needy (Al-Masakin): Those who have some income but
+                        do not meet their essential needs.
+                      </li>
+                      <li class="list">
+                        Zakat Collectors: Individuals appointed by the Islamic
+                        authority to collect and distribute Zakat.
+                      </li>
+                    </ul>
+                    <p class="subtitle">
+                      By distributing Zakat to these groups, the Muslim
+                      community ensures that the wealth is circulated justly and
+                      support is given to those in dire need, fostering a sense
+                      of unity and brotherhood.
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto" >
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50 " style="text-align: center;">
+              <h2 class="title font-700 ">Frequently Asked Questions</h2>
+              <p class="pera" >When deciding which charity to donate to, it's important to do your search and find one that aligns with your values and interests.</p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How is the amount of Zakat calculated?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Zakat is typically calculated as 2.5% of one's savings and wealth above the Nisab threshold. This includes cash, gold, silver, and other assets held for more than a lunar year. The Nisab is the minimum amount of wealth a Muslim must have before they are obligated to pay Zakat, equivalent to 87.48 grams of gold or 612.36 grams of silver.
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can Zakat be given to family members?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Zakat can be given to family members who qualify under the categories of recipients, provided they are not immediate dependents, such as one's parents, children, or spouse. It is encouraged to help extended family members in need.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">When should Zakat be paid?</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Zakat is due once a lunar year (Hijri year) has passed since the wealth reached the Nisab threshold. Many Muslims choose to pay their Zakat during the month of Ramadan due to its increased spiritual significance, but it can be paid at any time of the year.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How can one ensure their Zakat reaches the eligible recipients?</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">It is important to choose reputable and trustworthy organizations or individuals who have a clear understanding of Zakat distribution rules. Many Islamic charitable organizations specialize in distributing Zakat according to Islamic guidelines. Verifying their processes and transparency can help ensure that Zakat reaches those in need.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main></Layout>

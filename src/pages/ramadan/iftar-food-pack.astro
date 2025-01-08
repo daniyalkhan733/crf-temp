@@ -1,0 +1,459 @@
+---
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Ramadan Iftar Food Pack Distribution  - Support the Fasting";
+const description =
+  "Earn rewards this Ramadan by providing iftar food pack to the needy. For over 10 years, we've fed hundreds daily in every Ramadan. Donate now";
+const keywords =
+  "Iftar Food Pack, Donate Iftar,Iftar Donation,Iftar Food Packages,Iftar Packs";
+const pageImage = "";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <Breadcrumb
+      title="Iftar Food Pack"
+      link="/assets/images/appeals/masjid-4.png"
+      image="/assets/images/breadcrumb-bg.jpg"
+    />
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="Iftar Food Pack"
+      description="Supporting Families & Individuals in Need"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                    Iftar Food Pack: Supporting Families & Individuals in Need
+                </h2>
+                <p class="pera-subtitle mb-15">
+                    CRF Iftar Food Pack appeal embodies the spirit of faith, compassion, and generosity. During Ramadan, Muslims around the world come together to reflect, seek spiritual growth, and help those in need. One of the most cherished traditions is the Iftar meal, where individuals break their fast. Sadly, for many struggling families, even this modest meal remains unattainable.
+
+                    
+                </p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill">Donate Now</a
+                >
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">Why Iftar Food Packs Matter
+
+                </h4>
+                  <p class="subtitle">
+                    Ramadan is a month that teaches empathy and selflessness. Fasting allows individuals to experience the struggles of those who go hungry daily. However, for families already grappling with poverty, fasting becomes even more challenging when they lack the means to prepare an adequate Iftar packs meal.
+
+
+                  </p>
+                  
+                 
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <!-- <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4> -->
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">How Your Iftar Donation Makes a Difference
+
+                    </h4>
+                    <p class="pera">
+                        Each Iftar Food Pack distributed by CRF is carefully prepared to meet the dietary needs of fasting individuals. The contents typically include staple items such as rice, lentils, dates, flour, sugar, and cooking oil, ensuring that families can prepare wholesome meals throughout Ramadan. These food packs are designed to provide essential nutrients and sustain families for several days.
+
+                    </p>
+                    <ul class="bullet-list">
+                        <li class="list">
+                            A single donation can feed an entire family for a week.
+
+
+                        </li>
+                        <li class="list">
+                            Families no longer have to worry about sourcing their next meal.
+
+
+                        </li>
+                        <li class="list">
+                            Parents can focus on spiritual practices without the burden of hunger.
+
+
+                        </li>
+                        <li class="list">
+                            Children can experience the joy of Ramadan with a nutritious Iftar, Creating a sense of stability and joy.
+
+
+                        </li>
+                      </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">Donate Iftar Through CRF's Trusted Appeal
+                    </h4>
+                    <p class="pera">
+                        At Care and Relief (CRF), we prioritize 100% transparency and trust. Our donors are at the heart of everything we do, and we ensure that every contribution reaches those in genuine need. With over a decade of experience in Ramadan initiatives, CRF has established efficient processes to distribute Iftar Food Packages to vulnerable communities worldwide.
+                        <br><br>
+                        Making an Iftar Donation is simple and secure. Here's how you can contribute:
+                    </p>
+                    <ul class="bullet-list">
+                        <li class="list">
+                          <span style="font-weight: 700;">Online Donations:</span>
+                           Visit our official website and select the “Donate Iftar” option to make a secure online payment.
+
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Bank Transfers:</span>
+                           Transfer your contribution directly to our designated account.
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Community Campaigns:</span>
+                           Join our local fundraising efforts to amplify your impact.
+
+
+                        </li>
+                      
+                      </ul>
+<p class="pera">
+    Your support enables us to plan and distribute food packs efficiently, ensuring no family is left behind. By partnering with CRF, you become a part of a trusted initiative that brings hope and sustenance to those in need during Ramadan.
+
+</p>
+                
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">Why Choose CRF for Iftar Food Packages?
+
+                    </h4>
+                    <p class="pera">
+                        Care and Relief (CRF) has built a reputation for reliability, compassion, and efficiency. Here's why donors trust us to deliver Iftar Food Packs:
+
+                    </p>
+                    <ul class="bullet-list">
+                        <li class="list">
+                          <span style="font-weight: 700;">Experience and Expertise:</span>
+                           With over 10 years of Ramadan initiatives, we have developed a deep understanding of community needs and logistical planning.
+
+
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Transparency:</span>
+                           We provide regular updates and reports to our donors, showcasing how their contributions are utilized.
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Commitment to Impact:</span>
+                           Our goal is to maximize the impact of every donation, ensuring that each food pack reaches those who need it most.
+
+
+                        </li>
+                      
+                      </ul>
+<p class="pera">
+    When you choose CRF, you choose an organization that values your trust and works tirelessly to uphold it. We understand the spiritual significance of Ramadan and strive to make your contribution a source of blessings for you and those you support.
+
+
+</p>
+                
+
+                  </div>
+              
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What's in an Iftar Food Pack? 
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Each pack contains essential staples including dates, juice, rice, Yogurt, Bread, and fruits to break the fast in Ramadan.
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  How does the Care & Relief Foundation distribute Iftar food packs?
+                </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Care & Relief Foundation delivers Iftar food packs to families in need across the UK, through volunteers and local centers, based on community assessments.
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >Can people from outside UK contribute to the Care & relief Foundation's iftar food pack program?
+
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, people outside the UK can contribute to the Iftar food pack program via our website. We accept international donations, which are used to purchase food for distribution in the UK.
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >How long does an Iftar food pack last?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    An Iftar food pack is designed to provide enough iftar food for a family for the entire month of Ramadan, ensuring they have sufficient meals for Iftar each day.
+                    
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    >What steps does the Care & Relief Foundation take to ensure the quality and safety of the Iftar food packs?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Care & Relief Foundation follows strict food safety guidelines, sourcing fresh, high-quality ingredients from trusted suppliers. Each pack is carefully prepared and packaged to ensure the safety and freshness of the items.
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

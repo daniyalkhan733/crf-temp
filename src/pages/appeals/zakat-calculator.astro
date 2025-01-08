@@ -1,0 +1,412 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import ZakatCalculator from "../../components/ZakatCalculator.astro";
+---
+
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/images/breadcrumb/zakat-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+  </style>
+  <main>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals" class="single">Appeals </a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals/zakat" class="single">Zakat Calculator</a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">
+            Zakat Calculator
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+    <DonationCard programId={[7, 14, 15]} />
+
+    <div
+      id="calculator"
+      class="section-tittle mb-50 container"
+      style="text-align: center;"
+    >
+      <h2 class="title font-700" style="color: #156E9D;">
+        Simplify Your Zakat Calculation
+      </h2>
+      <p class="pera">
+        Determining your Zakat seems to be a difficult task. However, it isn't
+        as challenging as you might think of it. All you need to do is
+        categorise your assets and liabilities in away that makes it convenient
+        for you to calculate Zakat. To make it even more convenient and quick,
+        use our Zakat Calculator to find out how much you need to pay.
+        <br /><br />
+        AWF Zakat Calculator has simplified the calculation by dividing assets into
+        items to be considered to pay Zakat for (such as gold, silver, cash, savings,
+        and business assets) and deductible liabilities (including debts and other
+        outgoing payments). Using this breakdown, you can easily calculate Zakat.
+        <br /><br />
+
+        Once you assess the value of your net assets, you can determine the
+        amount of Zakat. owed. It's crucial to compare your net assets to the
+        nisab threshold to find out whether Zakat is obligatory.
+      </p>
+    </div>
+    <ZakatCalculator />
+    <section id="section-tittle">
+      <div class="container mt-5">
+        <div class="row justify-content-between align-items-center">
+          <!-- Left Column: Text Content -->
+          <div class="col-md-6 mb-4 align-self-center">
+            <div class="nisab-div section-title mb-4">
+              <h2 class="nisab-title">Nisab of Zakat</h2>
+              <p class="nisab-description">
+                The Nisab of Zakat is the minimum amount of wealth a Muslim
+                possesses. These assets must be in the possession for over one
+                lunar year to be eligible to pay Zakat. The sum is commonly
+                known as the nisab threshold.
+              </p>
+              <p class="nisab-description">
+                The nisab of Zakat is calculated on the values of Gold and
+                Silver. In 2024, the determined value of nisab is 87.48 grams of
+                gold and 612.36 grams of silver.
+              </p>
+            </div>
+            <div class="nisab-div section-title mb-4">
+              <h2 class="nisab-title-2">
+                CURRENT NISAB VALUE <span style="color:#156e9d;"
+                  >(11 November 2024)</span
+                >
+              </h2>
+              <div class="nisab-cards">
+                <div class="nisab-card">
+                  <p>Gold Nisab*</p>
+                  <h5>£5,848.69</h5>
+                  <span>(87.48g)</span>
+                </div>
+                <div class="nisab-card">
+                  <p>Silver Nisab*</p>
+                  <h5>£478.45</h5>
+                  <span>(612.36g)</span>
+                </div>
+              </div>
+              <p class="nisab-note">*Nisab values are updated regularly</p>
+              <p class="nisab-footer">
+                Utilise our Zakat Calculator 2024 to determine how much you need
+                to pay.
+              </p>
+            </div>
+            <div class="calculate-btn-div">
+              <a href="#calculator" class="btn-primary-fill">
+                CALCULATE YOUR ZAKAT
+              </a>
+            </div>
+          </div>
+          <!-- Right Column: Image -->
+          <div class="col-md-5 mb-4 mb-md-0">
+            <img
+              src="/assets/images/appeals/sadaqah-4.jpg"
+              alt="Ramadan - The Blessed Month of Giving"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >How is the amount of Zakat calculated?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Zakat is typically calculated as 2.5% of one's savings and
+                    wealth above the Nisab threshold. This includes cash, gold,
+                    silver, and other assets held for more than a lunar year.
+                    The Nisab is the minimum amount of wealth a Muslim must have
+                    before they are obligated to pay Zakat, equivalent to 87.48
+                    grams of gold or 612.36 grams of silver.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    >Can Zakat be given to family members?</button
+                  >
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Zakat can be given to family members who qualify under the
+                    categories of recipients, provided they are not immediate
+                    dependents, such as one's parents, children, or spouse. It
+                    is encouraged to help extended family members in need.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >When should Zakat be paid?</button
+                  >
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Zakat is due once a lunar year (Hijri year) has passed since
+                    the wealth reached the Nisab threshold. Many Muslims choose
+                    to pay their Zakat during the month of Ramadan due to its
+                    increased spiritual significance, but it can be paid at any
+                    time of the year.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >How can one ensure their Zakat reaches the eligible
+                    recipients?</button
+                  >
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    It is important to choose reputable and trustworthy
+                    organizations or individuals who have a clear understanding
+                    of Zakat distribution rules. Many Islamic charitable
+                    organizations specialize in distributing Zakat according to
+                    Islamic guidelines. Verifying their processes and
+                    transparency can help ensure that Zakat reaches those in
+                    need.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <style>
+    /* General Styles */
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .section-padding {
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Title and Description */
+    .nisab-title {
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #156e9d;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .nisab-title-2 {
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: black;
+      font-weight: 200;
+      margin-bottom: 10px;
+    }
+
+    .nisab-div {
+      text-align: center;
+    }
+
+    .nisab-description {
+      font-size: 1rem;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .nisab-subtitle {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #333333;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Nisab Cards */
+    .nisab-cards {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .nisab-card {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #156e9d;
+      background-color: #f9f9f9;
+    }
+
+    .nisab-card p {
+      font-size: 1rem;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+
+    .nisab-card h5 {
+      font-size: 1.4rem;
+      color: #156e9d;
+      margin: 0;
+    }
+
+    .nisab-card span {
+      font-size: 0.9rem;
+      color: #999999;
+    }
+
+    /* Notes and Button */
+    .nisab-note {
+      font-size: 1rem;
+      color: #156e9d;
+      margin-bottom: 15px;
+    }
+
+    .nisab-footer {
+      font-size: 1rem;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary-fill {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #156e9d;
+      border: none;
+      border-radius: 35px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .calculate-btn-div {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .btn-primary-fill:hover {
+      background-color: #0f4d6d;
+    }
+
+    /* Image Styles */
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nisab-cards {
+        flex-direction: column;
+      }
+    }
+  </style>
+</Layout>

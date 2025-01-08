@@ -1,0 +1,402 @@
+---
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Pay Fitrana & Sponser Eid Gift for Needy Child | CRF";
+const description =
+  "Share happinies this EID by donating Fitrana and Eid gifts through Care & Relief Foundation. Your Zakat-ul-Fitr brings hope to those need.";
+const keywords =
+  "zakat ul fitr, what is fitrana,fitrana donation,eid gifts,how much is fitrana 2025";
+const pageImage = "";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <Breadcrumb
+      title="Fitrana & Eid Gifts"
+      link="/assets/images/appeals/masjid-4.png"
+      image="/assets/images/breadcrumb-bg.jpg"
+    />
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="CRF Fitrana Appeal"
+      description="Fidya and Kaffara"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                    Spread Joy This Eid with Zakat-ul-Fitr
+                </h2>
+                <p class="pera-subtitle mb-15">
+                    Eid is a time of joy, celebration, and togetherness. Unfortunately, for many underprivileged families, it can be a day of hardship and unmet needs. As Muslims, we have a responsibility to share our blessings and bring happiness to others. <br><br>
+                    Paying Zakat ul Fitr and sponsoring Eid gifts are meaningful ways to support those in need during this special time. Care and Relief Foundation (CRF) offers an excellent platform to fulfill this duty and spread the spirit of Eid. Your Zakat-ul-Fitr donations and contributions to CRF for Eid gifts can bring hope and joy to countless needy lives.
+                    
+                </p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill">Donate Now</a
+                >
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">What is Fitrana?
+                </h4>
+                  <p class="subtitle">
+                    Fitrana, also known as Zakat-ul-Fitr, is a form of charity given at the end of Ramadan or the day of Eid-Ul-Fitr before the Salah. It is an essential Islamic practice aimed at purifying the fast and ensuring that everyone can partake in the joy of Eid. Unlike Zakat, which is calculated on annual savings, Fitrana is a fixed amount given per person in a household. It is typically provided in the form of food or its monetary equivalent.
+
+                  </p>
+                  <div class="divider"></div>
+                  
+                 
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <!-- <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4> -->
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">Zakat ul Fitr: A Spiritual Responsibility
+                    </h4>
+                    <p class="pera">
+                        Zakat ul Fitr holds immense spiritual significance. It serves as a means of purification, compensating for any shortcomings in fasting during Ramadan. Paying Fitrana is obligatory for every Muslim who possesses enough food to last for the day. The head of the household is responsible for paying it on behalf of all dependents, including children and elders.
+
+                    </p>
+                    <ul class="bullet-list">
+                        <li class="list">
+                          <span style="font-weight: 700;">Spiritual Significance:</span>
+                           Zakat ul Fitr is a vital act of worship, symbolizing purification and compensating for any imperfections in fasting during Ramadan.
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Obligatory for Muslims:</span>
+                          It is a mandatory duty for every Muslim who has sufficient food for a day.
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Household Responsibility:</span>
+                           The head of the family is accountable for paying Zakat ul Fitr on behalf of all dependents, including children and elders.
+
+                        </li>
+                        <li class="list">
+                          <span style="font-weight: 700;">Purpose of Fitrana:</span>
+                           This contribution ensures spiritual fulfillment and fosters a sense of communal care during the blessed month.
+
+                        </li>
+                      </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">How Much is Fitrana 2025?</h4>
+                    <p class="pera">
+                        The amount of Fitrana is determined based on the value of staple foods like wheat, barley, dates, or raisins. For 2025, the estimated amount may vary depending on local food prices. Islamic scholars and organizations often announce the exact Fitrana amount closer to Ramadan’s end.
+                        <br><br>
+                        Typically, Fitrana is equivalent to the cost of approximately 2.5 kilograms of staple food per person. To ensure accuracy, you can consult your local mosque or Islamic organization. Donating the correct amount on time is crucial, as Fitrana must be distributed to the needy before the Eid prayer.
+
+
+                    </p>
+                
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                        Fitrana Donation: How Your Contribution Makes a Difference
+                    </h4>
+                    <p class="pera">
+                        Donating Fitrana is not just a financial transaction; it is an act of compassion that directly impacts lives. When you make a Fitrana donation through Care And Relief Foundation (CRF), you are ensuring that your contribution reaches those who need it the most. CRF has a transparent and efficient process to distribute Fitrana to deserving families, enabling them to celebrate Eid with dignity.
+<br><br>Your Fitrana donation can help provide basic necessities such as food, clothing, and shelter to underprivileged individuals. It brings smiles to the faces of children and families who might otherwise have nothing to celebrate. CRF’s commitment to accountability ensures that every donation is utilized effectively to make a meaningful impact.
+                    </p>
+                 
+                    
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What is Fitrana (Zakat al-Fitr)?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Fitrana (also known as Zakat al-Fitr) & it is mandatory charitable donation of food that must be given before the Eid prayer, at the end of Ramadan, as an act of love for Allah.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                  How can I pay my Fitrana through the Care & Relief Foundation?                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can pay your Fitrana donation securely through our <a href="/">website</a> . We ensure your contribution reaches the most vulnerable families in time for Eid
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >Can I pay Fitrana on behalf of my family members?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, you can pay Fitrana for your family members, including dependents, children, and elderly relatives. Simply provide their details when making your donation.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >What is the "Sponsor Eid Gift" program?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The "Sponsor Eid Gift" program allows donors to provide Eid gifts to families in need. Your sponsorship will provide essential items, such as clothing, food, and other gifts, ensuring everyone can celebrate Eid with dignity.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    >How can I sponsor an Eid gift for a family?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can sponsor an Eid gift through our <a href="">website</a> by selecting the donation amount. Your contribution will be used to provide a special Eid package to a family or individual in need.
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

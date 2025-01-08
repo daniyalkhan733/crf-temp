@@ -1,0 +1,807 @@
+---
+import DonationCard from "../components/DonationCard.astro";
+import Layout from "../layouts/Layout.astro";
+const posts = await Astro.glob("./blogs/*.md");
+import { SEO } from "astro-seo";
+const title = "Islamic Charity in the UK | Trusted UK Muslim Charity | CRF";
+const description =
+  "Donate today to Care And Relief Foundation, A trusted UK Muslim charity. Support our efforts to provide food, water, & health services to those who need it most";
+const pageImage = "";
+const keywords =
+  "Islamic Charity,Charities in UK,Muslim Charity,Care And Relief Foundation,CRF";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+
+<Layout>
+  <main>
+    <!-- Hero area S t a r t-->
+    <section class="hero-area">
+      <div class="single-slider pt-87">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 my-auto">
+              <div class="hero-caption-one mb-20">
+                <h4
+                  class="key-title font-700 mb-20 wow fadeInUp"
+                  data-wow-delay="0.0s"
+                >
+                  Donate your Sadaqah and help those in need
+                </h4>
+                <h1
+                  class="hero-caption-one font-700 wow fadeInUp mb-20 title"
+                  data-wow-delay="0.1s"
+                >
+                  Give Sadaqah,
+
+                  <br /><span style="color: #156e9d;"> Spread Joy</span>
+                </h1>
+                <p class="pera wow fadeInUp" data-wow-delay="0.3s">
+                  Your Sadaqah can bring joy and nourishment to those in need.
+                  Share your blessings with Care and Relief to make a difference
+                  in the lives of less fortunate. Donate your sadaqah to
+                  families in need.
+                </p>
+                <div class="d-flex gap-20 flex-wrap">
+                  <a
+                    href="/appeals/sadaqah"
+                    class="btn-primary-fill hero-btn wow fadeInLeft"
+                    data-wow-delay="0.4s">Donate Now</a
+                  >
+                  <a
+                    href="/contact-us"
+                    class="btn-tertiary-fill hero-btn wow fadeInRight"
+                    data-wow-delay="0.4s">Join Volunteers</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+              <div class="d-flex gap-44">
+                <div class="hero-image position-relative">
+                  <img
+                    src="/assets/images/sadaqah-donation-banner-image.jpg"
+                    alt="img"
+                    class="w-100 tilt-effect wow fadeInUp rounded"
+                    data-wow-delay="0.1s"
+                  />
+                </div>
+                <div class="hero-count-section flex flex-column gap-60">
+                  <div
+                    class="hero-count wow fadeInUp d-none d-lg-block"
+                    data-wow-delay="0.0s"
+                  >
+                    <h4 class="title">1M+</h4>
+                    <p class="pera">
+                      People Helped <br />
+                    </p>
+                  </div>
+                  <div
+                    class="hero-count wow fadeInUp d-none d-lg-block"
+                    data-wow-delay="0.2s"
+                  >
+                    <h4 class="title">6+</h4>
+                    <p class="pera">
+                      Countries <br />
+                    </p>
+                  </div>
+                  <div
+                    class="hero-count wow fadeInUp d-none d-lg-block"
+                    data-wow-delay="0.3s"
+                  >
+                    <h4 class="title">12+</h4>
+                    <p class="pera">
+                      Years Experience <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Hero-->
+    <!-- Donate S t a r t -->
+    <DonationCard programId={[11, 12, 13]} />
+    <!-- End-of Donate -->
+    <!-- About us Area S t a r t -->
+    <section class="about-area">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-35">
+              <span class="sub-tittle text-capitalize font-600">About us</span>
+              <h2 class="title font-700 pb-15">
+                Bringing Hope and Help: Your Contributions Matter
+              </h2>
+              <p class="pera-subtitle mb-15">
+                Founded in 2012 by Allama Syed Zafar Ullah Shah, the Care and
+                Relief Foundation (CRF) is a non-profit organization dedicated
+                to alleviating poverty and enhancing the quality of life for
+                underserved communities. Operating primarily in Pakistan and
+                extending its reach globally, CRF implements projects that
+                provide essential resources such as clean water, food, medical
+                care, and access to solar power.
+              </p>
+              <p class="pera-subtitle">
+                By focusing on sustainable development, CRF aims to empower
+                individuals to become self-sufficient, fostering environments
+                where communities can thrive. Our mission is rooted in the
+                belief that every individual deserves the opportunity to lead a
+                healthy, productive life.
+              </p>
+            </div>
+            <div class="about-info">
+              <div class="row">
+                <div class="col-lg-10 mb-20">
+                  <div class="d-flex gap-20">
+                    <div class="info-icon">
+                      <i class="ri-hand-heart-line"></i>
+                    </div>
+                    <div class="info-content">
+                      <h4 class="title">Donation</h4>
+                      <p class="pera">
+                        Every contribution helps us sustain and expand our
+                        humanitarian projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-10 mb-20">
+                  <div class="d-flex gap-20">
+                    <div class="info-icon">
+                      <i class="ri-user-line"></i>
+                    </div>
+
+                    <div class="info-content">
+                      <h4 class="title">Impact</h4>
+                      <p class="pera">
+                        Your support transforms lives, creating lasting change
+                        in communities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-10 mt-10">
+                  <a href="/about-us" class="btn btn-primary-fill">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="position-relative h-100">
+              <div class="play-button">
+                <a
+                  id="play-video-two"
+                  class="video-play-button-two d-none d-lg-block d-none d-lg-block"
+                  href="javascript:void(0)"
+                >
+                  <span></span>
+                </a>
+
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w-100 d-none d-lg-block"
+                  src="/assets/images/home.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-of About us Area -->
+
+    <!-- helpful area S t a r t-->
+    <section class="helpful-area-three section-padding2">
+      <div class="container">
+        <div class="row g-24">
+          <div class="col-xl-3 col-md-6 col-lg-6">
+            <div
+              class="helpful-card wow fadeInUp custom-shadow"
+              data-wow-delay="0.0s"
+            >
+              <div class="helpful-card-icon">
+                <!-- <i class="ri-cursor-line"></i> -->
+                <img
+                  src="/assets/images/icon/step-1.png"
+                  alt="Step 1"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div class="helpful-card-caption">
+                <h4
+                  class="caption-title"
+                  style="background-color: white !important; color:black"
+                >
+                  Step 1
+                </h4>
+                <p class="caption-para px-4">
+                  <span class="font-weight-bold">Select Appeal:</span> Choose the
+                  specific cause or campaign you want to support from a list of ongoing
+                  appeals.
+                </p>
+                <!-- <a href="https://crf-donate.tscube.co.in/" class="imp-link">Donate Now <i class="ri-arrow-right-up-line"></i></a> -->
+              </div>
+              <div
+                class="number-watermark"
+                style="color: rgba(221, 221, 221, 0.1) !important;"
+              >
+                <h4
+                  class="number"
+                  style="color: rgba(221, 221, 221, 0.1) !important;"
+                >
+                  01
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 col-lg-6">
+            <div
+              class="helpful-card wow fadeInUp custom-shadow"
+              data-wow-delay="0.0s"
+            >
+              <div class="helpful-card-icon">
+                <!-- <i class="ri-cursor-line"></i> -->
+                <img
+                  src="/assets/images/icon/step-2.png"
+                  alt="Step 2"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div class="helpful-card-caption">
+                <h4
+                  class="caption-title"
+                  style="background-color: white !important; color:black"
+                >
+                  Step 2
+                </h4>
+                <p class="caption-para px-4">
+                  <span class="font-weight-bold">Enter Donation Amount:</span> Specify
+                  the amount of money you wish to donate. This can be a custom value.
+
+                  <!-- <br>&nbsp;
+          <br>&nbsp; -->
+                </p>
+                <!-- <a href="https://crf-donate.tscube.co.in/" class="imp-link"
+                  >Donate Now <i class="ri-arrow-right-up-line"></i></a> -->
+              </div>
+              <div
+                class="number-watermark"
+                style="color: rgba(221, 221, 221, 0.1) !important;"
+              >
+                <h4
+                  class="number"
+                  style="color: rgba(221, 221, 221, 0.1) !important;"
+                >
+                  02
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-lg-6">
+            <div
+              class="helpful-card wow fadeInUp custom-shadow"
+              data-wow-delay="0.0s"
+            >
+              <div class="helpful-card-icon">
+                <!-- <i class="ri-cursor-line"></i> -->
+                <img
+                  src="/assets/images/icon/step-3.png"
+                  alt="Step 3"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div class="helpful-card-caption">
+                <h4
+                  class="caption-title"
+                  style="background-color: white !important; color:black"
+                >
+                  Step 3
+                </h4>
+                <p class="caption-para px-4">
+                  <span class="font-weight-bold"
+                    >Provide Donor Information:</span
+                  > Fill in your personal details, including name, email, and possibly
+                  address.
+
+                  <!-- <br>&nbsp;
+          <br>&nbsp; -->
+                </p>
+                <!-- <a href="https://crf-donate.tscube.co.in/" class="imp-link"
+                  >Donate Now <i class="ri-arrow-right-up-line"></i></a> -->
+              </div>
+              <div
+                class="number-watermark"
+                style="color: rgba(221, 221, 221, 0.1) !important;"
+              >
+                <h4
+                  class="number"
+                  style="color: rgba(221, 221, 221, 0.1) !important;"
+                >
+                  03
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-lg-6">
+            <div
+              class="helpful-card wow fadeInUp custom-shadow"
+              data-wow-delay="0.0s"
+            >
+              <div class="helpful-card-icon">
+                <!-- <i class="ri-cursor-line"></i> -->
+                <img
+                  src="/assets/images/icon/step-4.png"
+                  alt="Step 4"
+                  height="40px"
+                  width="40px"
+                />
+              </div>
+              <div class="helpful-card-caption">
+                <h4
+                  class="caption-title"
+                  style="background-color: white !important; color:black"
+                >
+                  Step 4
+                </h4>
+                <p class="caption-para px-4">
+                  <span class="font-weight-bold">Payment Confirmation: </span> Enter your payment detail and make the donation. You will receive a confirmation email.
+
+                  <!-- <br>&nbsp;
+          <br>&nbsp; -->
+                </p>
+                <!-- <a href="https://crf-donate.tscube.co.in/" class="imp-link"
+                  >Donate Now <i class="ri-arrow-right-up-line"></i></a> -->
+              </div>
+              <div
+                class="number-watermark"
+                style="color: rgba(221, 221, 221, 0.1) !important;"
+              >
+                <h4
+                  class="number"
+                  style="color: rgba(221, 221, 221, 0.1) !important;"
+                >
+                  04
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-of helpful-->
+
+    <!-- urgent Area S t a r t -->
+    <section class="urgent-area section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <!-- Section Tittle -->
+            <div class="section-tittle text-center mb-50">
+              <span class="sub-tittle text-capitalize font-600"
+                >In urgent cases</span
+              >
+              <h2 class="title font-700">
+                Support Our Mission with Your Generous Donation
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div
+            class="col-xxl-7 col-xl-8 col-lg-8 p-0 urgent-area-slide xs-p-12"
+          >
+            <!-- Single Slider-->
+            <div class="image-container position-relative h-100">
+              <a href="/appeals/gaza"
+                ><img
+                  class="w-100 h-100"
+                  src="/assets/images/home-slider-1.jpg"
+                  alt="img"
+                /></a
+              >
+              <div class="image-overlay-text">
+                <div class="flex mb-10">
+                  <div class="map flex gap-10">
+                    <i class="ri-map-pin-line"></i>
+                    <p class="pera">Gaza</p>
+                  </div>
+                </div>
+                <div class="overlay-title">
+                  <h4 class="title max-w-567">
+                    <a href="/appeals/gaza">
+                      Contribute to Lifesaving Aid for Gaza Now</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- Single Slider-->
+            <div class="image-container position-relative h-100">
+              <a href="/appeals/zakat"
+                ><img
+                  class="w-100 h-100"
+                  src="/assets/images/home-slider-2.jpg"
+                  alt="img"
+                /></a
+              >
+              <div class="image-overlay-text">
+                <div class="flex mb-16">
+                  <div class="map flex gap-10">
+                    <i class="ri-map-pin-line"></i>
+                    <p class="pera">Tanzania</p>
+                  </div>
+                </div>
+                <div class="overlay-title">
+                  <a href="/appeals/zakat">
+                    <h4 class="title max-w-567">
+                      Transform Lives in Tanzania with Your Support
+                    </h4></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Single Slider -->
+            <div class="image-container position-relative h-100">
+              <a href="/appeals/sadaqah">
+                <img
+                  class="w-100 h-100"
+                  src="/assets/images/home-slider-3.jpg"
+                  alt="img"
+                /></a
+              >
+              <div class="image-overlay-text">
+                <div class="flex mb-16">
+                  <div class="map flex gap-10">
+                    <i class="ri-map-pin-line"></i>
+                    <p class="pera">Tanzania</p>
+                  </div>
+                </div>
+                <div class="overlay-title">
+                  <a href="/appeals/sadaqah"
+                    ><h4 class="title max-w-567">
+                      Transform Lives in Tanzania with Your Support
+                    </h4></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xxl-3 col-xl-4 col-lg-4 p-0 xs-p-12">
+            <div class="image-right-card">
+              <div class="tab-section tab-section-one" id="tab-section-one">
+                <div class="counting-day flex gap-10 mb-10">
+                  <i class="ri-time-line"></i>
+                  <p class="pera">652 Days Remaining</p>
+                </div>
+                <div>
+                  <h4 class="title">Help Us Make a Difference - Donate Now</h4>
+                </div>
+                <div>
+                  <p class="subtitle">
+                    Join us in bringing hope and resources to communities
+                    worldwide. Together, we can create opportunities and foster
+                    growth in regions that need it most.
+                  </p>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="tab-section tab-section-two" id="tab-section-two">
+                <div class="counting-day flex gap-10 mb-10">
+                  <i class="ri-time-line"></i>
+                  <p class="pera">652 Days Remaining</p>
+                </div>
+                <div>
+                  <h4 class="title">
+                    The Universal Hands-free lighting Solution
+                  </h4>
+                </div>
+                <div>
+                  <p class="subtitle">
+                    Join us in bringing hope and resources to communities
+                    worldwide. Together, we can create opportunities and foster
+                    growth in regions that need it most.
+                  </p>
+                </div>
+                <div class="progress custom-progress"></div>
+              </div>
+              <div class="flex justify-content-center mt-30">
+                <div class="tab-btn">
+                  <a
+                    href="https://crf-donate.tscube.co.in/"
+                    class="btn"
+                    style="
+                      padding: 7px 30px 7px 30px !important;
+                      color: black;
+                      font-weight: bold;
+"
+                    data-tab-id="tab-section-one ">Donate Now</a
+                  >
+                </div>
+              </div>
+
+              <!-- Your tab sections remain the same -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-of urgent area -->
+    <!-- Gallery S t a r t -->
+    <div class="gallery-area">
+      <div class="gallery-slider d-flex">
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-1.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-2.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-3.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-4.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-5.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-6.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-7.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-8.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-9.png" alt="img" />
+        </div>
+        <div class="gallery-img">
+          <img src="/assets/images/gallery/gallery-10.png" alt="img" />
+        </div>
+      </div>
+    </div>
+    <!-- End-of Gallery -->
+
+    <!-- Testimonial S t a r t-->
+    <section class="testimonial-section mt-40 section-padding2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <!-- Section Tittle -->
+            <div class="section-tittle text-center mb-50">
+              <span class="sub-tittle text-capitalize font-600"
+                >Testimonials</span
+              >
+              <h2 class="title font-700">What People Say</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center g-24">
+          <div class="col-lg-10 col-12 testimonial-slider">
+            <div class="single-testimonial position-relative">
+              <div class="client-info">
+                <div class="client-details">
+                  <h3 class="name">Mohammed Iqbal</h3>
+                  <p class="location">United Kingdom</p>
+                </div>
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div class="position-relative">
+                <p class="pera">
+                  <i
+                    >I've been donating to the Care and Relief Foundation for a
+                    few years now. Every time I am impressed by their commitment
+                    and the real changes they make. They truly care about each
+                    community they help and they keep us updated on how our
+                    contributions make a difference It is comforting to know
+                    exactly where my help is going.</i
+                  >
+                </p>
+                <div class="position-absolute quote">
+                  <div class="rounded-btn">
+                    <i class="ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-testimonial position-relative">
+              <div class="client-info">
+                <div class="client-details">
+                  <h3 class="name">Iftekhar Ahmed</h3>
+                  <p class="location">United Kingdom</p>
+                </div>
+
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div class="position-relative">
+                <p class="pera pb-80">
+                  <i
+                    >The work CRF does is incredible They've truly changed
+                    lives.</i
+                  >
+                </p>
+                <div class="position-absolute quote">
+                  <div class="rounded-btn">
+                    <i class="ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-testimonial position-relative">
+              <div class="client-info">
+                <div class="client-details">
+                  <h3 class="name">Aisha Khan</h3>
+                  <p class="location">United Kingdom</p>
+                </div>
+
+                <div class="rating">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+              <div class="position-relative">
+                <p class="pera pb-80">
+                  <i
+                    >I received aid from Care and Relief Foundation when my
+                    family was affected by the floods they were quick to respond
+                    with food and clean water their team treated us with such
+                    kindness and respect during our time of need.</i
+                  >
+                </p>
+                <div class="position-absolute quote">
+                  <div class="rounded-btn">
+                    <i class="ri-double-quotes-r"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Testimonial -->
+
+    <!-- Blog S t a r t -->
+    <section class="blog-section-three bottom-padding">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <!-- Section Tittle -->
+          <div class="section-tittle text-center mb-50">
+            <span class="sub-tittle text-capitalize font-600">Blog</span>
+            <h2 class="title font-700">Our Blog & Feeds</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gy-24">
+          {
+            posts.slice(0, 3).map((blogs) => (
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+                <div class="single-blog h-calc">
+                  <div class="blog-img">
+                    <a href={blogs.url}>
+                      <img
+                        src={blogs.frontmatter.image}
+                        class="img-fluid w-100"
+                        alt="img"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-info">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="blog-info-title">
+                        <div class="flex mb-15 gap-16 align-items-center">
+                          <div class="user flex gap-10 align-items-center">
+                            <i class="ri-user-line" />
+                            <p class="info">By: admin</p>
+                          </div>
+                          <div class="donate flex gap-10 align-items-center">
+                            <i class="ri-chat-3-line" />
+                            <p class="info">Donation</p>
+                          </div>
+                        </div>
+                        <h4 class="title text-capitalize">
+                          <a href={blogs.url}>{blogs.frontmatter.title}</a>
+                        </h4>
+                        <p class="subtitle">{blogs.frontmatter.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-section">
+                    <a href={blogs.url} class="read-btn">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+        <!-- pagination -->
+      </div>
+    </section>
+    <!-- End-of Blog -->
+  </main>
+
+  <!-- Scroll Up  -->
+  <div class="progressParent" id="back-top">
+    <svg
+      class="backCircle svg-inner"
+      width="100%"
+      height="100%"
+      viewBox="-1 -1 102 102"
+    >
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+  <!-- Add an overlay element -->
+  <div class="overlay"></div>
+  <style></style>
+</Layout>

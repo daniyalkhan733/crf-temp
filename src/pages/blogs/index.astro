@@ -1,0 +1,156 @@
+---
+import Layout from "../../layouts/Layout.astro";
+const posts = await Astro.glob("../blogs/*.md");
+import { SEO } from "astro-seo";
+const title = "Blogs – Insights and Updates from Care and Relief UK";
+const description =
+  "Explore the latest blogs from Care and Relief UK. Stay informed on global aid efforts, success stories, and ways you can support communities in need.";
+  const pageImage="";
+  const keywords="UK Charities Blog,Islamic Charity In UK,Islamic Charity Blogs";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+
+<Layout>
+  <main>
+    <style>
+      .breadcrumb-bg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("/assets/images/breadcrumb/blogs-bg.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 100%;
+opacity: 1;
+-webkit-transition: opacity 0.3s ease;
+transition: opacity 0.3s ease;
+z-index: -1;
+}
+    </style>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/blogs" class="single">Blog </a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Latest blog</h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+
+    <!-- Blog S t a r t -->
+    
+    <section class="blog-section-three top-bottom-padding">
+      <div class="row justify-content-center">
+        <div class="col-xl-7">
+          <!-- Section Tittle -->
+          <div class="section-tittle text-center mb-50">
+            <span class="sub-tittle text-capitalize font-600">Blog</span>
+            <h2 class="title font-700">Our Blog & Feeds</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row gy-24">
+          {
+            posts.slice(0, 6).map((blogs) => (
+              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 view-wrapper">
+                <div class="single-blog h-calc">
+                  <div class="blog-img">
+                    <a href={blogs.url}>
+                      <img
+                        src={blogs.frontmatter.image}
+                        class="img-fluid w-100"
+                        alt="img"
+                      />
+                    </a>
+                  </div>
+                  <div class="blog-info">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="blog-info-title">
+                        <div class="flex mb-15 gap-16 align-items-center">
+                          <div class="user flex gap-10 align-items-center">
+                            <i class="ri-user-line" />
+                            <p class="info">By: admin</p>
+                          </div>
+                          <div class="donate flex gap-10 align-items-center">
+                            <i class="ri-chat-3-line" />
+                            <p class="info">Donation</p>
+                          </div>
+                        </div>
+                        <h4 class="title text-capitalize">
+                          <a href={blogs.url}>{blogs.frontmatter.title}</a>
+                        </h4>
+                        <p class="subtitle">{blogs.frontmatter.description}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button-section">
+                    <a href={blogs.url} class="read-btn">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      
+      </div>
+    </section>
+    <!-- End-of Blog -->
+  </main>
+</Layout>

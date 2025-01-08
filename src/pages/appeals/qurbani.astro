@@ -1,0 +1,289 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout>
+    <main>
+      <style>
+        .breadcrumb-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/breadcrumb/qurbani-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+      </style>
+        <!-- Breadcrumb Area S t a r t -->
+        <section class="breadcrumb-section breadcrumb-bg" >
+          <div class="container"> 
+            <div class="breadcrumb-text">
+              <nav aria-label="breadcrumb" class="breadcrumb-nav wow fadeInUp" data-wow-delay="0.0s">
+                <ul class="breadcrumb listing">
+                  <li class="breadcrumb-item single-list"><a href="/" class="single">Home</a></li>
+                  <li class="breadcrumb-item single-list" aria-current="page">
+                    <a href="/appeals" class="single">Appeals </a>
+                  </li>   <li class="breadcrumb-item single-list" aria-current="page">
+                    <a href="/appeals/qurbani" class="single">Qurbani </a>
+                  </li>
+                </ul>
+              </nav>
+              <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Qurbani 2024
+              </h1>
+            </div>
+          </div>
+        </section>
+        <!-- End-of Breadcrumb Area -->
+        <DonationCard programId={[31 ]} />
+    
+      <section class="section-padding">
+        <div class="container mt-5">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-12 col-md-5 mb-4 mb-md-0">
+                <img
+                  src="/assets/images/appeals/qurbani-4.png"
+                  alt="Rounded Image"
+                  class="img-fluid rounded"
+                />
+              </div>
+              <div class="col-md-7 mb-4 align-self-center ">
+                <div class="section-tittle mb-35">
+                  <span class="sub-tittle text-capitalize font-600">Our Impact</span>
+                  <h2 class="title font-700 pb-15">Help Us Make a Difference This Eid al-Adha</h2>
+                  <p class="pera-subtitle mb-15"> Qurbani represents a significant act of worship and charity
+                    during Eid al-Adha, emphasizing the spirit of sacrifice. This
+                    tradition involves the humane slaughtering of an animal,
+                    followed by the distribution of its meat among those less
+                    fortunate. Participating in Qurbani allows you to directly
+                    support families struggling with food insecurity, providing them
+                    with the means to celebrate this auspicious occasion with a
+                    wholesome, nutritious meal.</p>
+                  <p class="pera-subtitle"></p>
+                </div>
+                <div class="col-lg-10 mt-10">
+                  <a href="https://crf-donate.tscube.co.in/" class="btn btn-primary-fill">Donate Now</a>
+                </div>
+               
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="blog-details top-bottom-padding2">
+        <div class="container">
+          <div class="row gy-24">
+            <div class="">
+              <div class="single-blog">
+                <div class="blog-img">
+                  <a href="javascript:void(0)">
+                    <div class="video-section">
+                      <iframe
+                        width="100%"
+                        height="600px"
+                        id="video"
+                        src="https://www.youtube.com/embed/a5rG3Kuxmt4?si=LqY-rstXKYXNa1wX"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </a>
+                </div>
+                <div class="blog-info">
+                  <div class="blog-info-title">
+                    <div class="flex gap-16 mb-20 align-items-center"></div>
+                    <h4 class="title">
+                      Extend your generosity through your Qurbani donation,
+                      reaching out to those in desperate need.
+                    </h4>
+                    <p class="subtitle">
+                      Qurbani, or the act of animal sacrifice, is a profound
+                      Islamic tradition commemorating the willingness of Prophet
+                      Ibrahim (Abraham) to sacrifice his son as an act of
+                      obedience to God. Instead, God provided a ram to sacrifice.
+                    </p>
+                    <div class="divider"></div>
+                    <p class="subtitle">
+                      This annual practice is not only a reminder of faith and
+                      submission but also a means to support those in need.
+                      Through Qurbani, we strengthen community bonds and extend
+                      charity, ensuring everyone partakes in the celebration of
+                      Eid al-Adha.
+                    </p>
+                    <p class="subtitle">
+                      We understand that there are many organizations seeking
+                      support, and we appreciate your consideration of
+                      [Organization Name]. We assure you that your donation will
+                      be used wisely and effectively to support the children.
+                    </p>
+                    <div class="divider"></div>
+                    <div class="quote-with-text">
+                      <div class="quote">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="76"
+                          height="54"
+                          viewBox="0 0 76 54"
+                          fill="none"
+                        >
+                          <path
+                            d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                            stroke="#090E0D"
+                            stroke-width="4"></path>
+                        </svg>
+                      </div>
+                      <h4 class="title">
+                        Donating to charity is a great way to make a positive
+                        impact on the world and help those in need. There are many
+                        different type of charities and causes tosuport, ranging
+                        from local.
+                      </h4>
+                    </div>
+                    <div class="d-flex gap-20">
+                      <div class="blog-multi-img">
+                        <img
+                          src="/assets/images/appeals/qurbani-1.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="blog-multi-img">
+                        <img
+                          src="/assets/images/appeals/qurbani-2.png"
+                          alt="image"
+                        />
+                      </div>
+                      <div class="blog-multi-img">
+                        <img
+                          src="/assets/images/appeals/qurbani-3.png"
+                          alt="image"
+                        />
+                      </div>
+                    </div>
+                    <div class="donation-content">
+                      <h4 class="title">donation</h4>
+                      <p class="pera">
+                        As we approach Qurbani 2024, let us remember the millions
+                        of children living in poverty, lacking access to basic
+                        necessities such as food, clean water, and healthcare.
+                        Many of these children are also deprived of educational
+                        opportunities, which perpetuates the cycle of poverty and
+                        limits their potential for a brighter future.
+                      </p>
+                      <ul class="bullet-list">
+                        <li class="list">
+                          This is a personal decision that requires careful
+                          consideration.
+                        </li>
+                        <li class="list">
+                          By choosing to participate in Qurbani this year, you can
+                          make a significant impact.
+                        </li>
+                        <li class="list">
+                          Your generous contributions can help save lives by
+                          providing essential resources to those in need.
+                        </li>
+                      </ul>
+                      <p class="subtitle">
+                        It's important to discuss your charitable intentions with
+                        your family, ensuring that your collective efforts can
+                        bring hope and relief to the most vulnerable. Let us come
+                        together this Qurbani 2024 to make a difference in the
+                        lives of these children and their communities.
+                      </p>
+                      <div class="divider"></div>
+                    </div>
+                  </div>
+                  <!-- blog info -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <style>
+          @media screen and (max-width: 768px) {
+            #video {
+              height: 300px;
+            }
+          }
+        </style>
+      </section>
+
+
+
+
+
+        <style>
+          @media  screen and (max-width: 768px){
+            #video{
+              height:300px;
+            }
+          }
+          
+          </style>
+<!-- Faq section started -->
+        <section class="question-area section-padding">
+          <div class="container">
+            <div class="row">
+              <div class="col my-auto" >
+                <!-- Section Tittle -->
+                <div class="section-tittle mb-50 " style="text-align: center;">
+                  <h2 class="title font-700 ">Frequently Asked Questions</h2>
+                  <p class="pera" >When deciding which charity to donate to, it's important to do your search and find one that aligns with your values and interests.</p>
+                </div>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Which animals are eligible for Qurbani?</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">The animals that can be sacrificed for Qurbani include sheep, goats, cows, and camels. These animals must be of a certain age and free from any significant defects. For instance, a sheep or goat should be at least one year old, while cows should be at least two years old.
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Who is required to perform Qurbani?</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">Qurbani is obligatory for every adult Muslim who possesses the financial means equivalent to or exceeding the Nisab (minimum amount of wealth that makes one liable to pay Zakat). This includes those who have savings exceeding their necessary expenses and basic needs.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">When should the Qurbani be performed?</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">Qurbani is performed during the days of Eid al-Adha, specifically after the Eid prayer on the 10th of Dhul-Hijjah and up until the sunset of the 12th of Dhul-Hijjah. The act should be done as early as possible within these days.</div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Is it permissible to perform Qurbani on behalf of someone else?</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">Yes, it is permissible to perform Qurbani on behalf of someone else, such as a family member, deceased relative, or even the entire household. This act of sharing the reward can be done with the intention of including others in the blessings of the sacrifice.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+  
+       
+      </main>
+
+</Layout>

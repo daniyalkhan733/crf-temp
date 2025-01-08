@@ -1,0 +1,410 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Donate Your Sadaqah Online 2024 | Give Sadaqah Online | CRF";
+const description =
+  "Donate Sadaqah online through CRF and contribute to our mission of providing food, shelter, and education to families in need across the world.";
+const keywords = "Sadaqah,Sadaqah Donation,Sadaqah Online,Give Sadaqah,sadaqah jariyah ";
+const pageImage="";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/images/breadcrumb/sadaqah-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+  </style>
+  <main>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals" class="single">Appeals </a>
+              </li>   <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals/sadaqah" class="single">Sadaqah Appeal </a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">
+            Sadaqah Appeal
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+    <DonationCard programId={[31, 34, 35, 22, 23, 32, 33]} />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/sadaqah-4.jpg"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">The Importance of Sadaqah</h2>
+                <p class="pera-subtitle mb-15">
+                  Sadaqah, a voluntary charitable giving in Islam, plays a
+                  crucial role in alleviating poverty and hardship. By
+                  contributing to Sadaqah, donors not only fulfill a spiritual
+                  obligation but also make a tangible impact on the lives of
+                  those in need. <br /><br /> Care and Relief Foundation enables
+                  you to direct your donations to various causes such as providing
+                  food, clean water, education, and medical aid.Every donation, no
+                  matter how small, can help transform lives and bring hope to communities
+                  struggling with poverty and adversity.Sadaqah serves as a lifeline
+                  for many individuals and families facing extreme poverty and dire
+                  conditions.
+                </p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill">Donate Now</a
+                >
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div class="video-section">
+                  <iframe
+                    width="100%"
+                    height="600px"
+                    id="video"
+                    src="https://www.youtube.com/embed/oQw1EwgrGrk?si=F_0f5xUQyV_581HC"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">
+                    Empowering Through Sadaqah: Making a Difference
+                  </h4>
+                  <p class="subtitle">
+                    Donating Sadaqah offers multifaceted benefits, contributing
+                    to positive societal impact and individual spiritual growth.
+                    Giving Sadaqah, or voluntary charity, holds a central place
+                    in Islamic teachings, promoting generosity and compassion.
+                  </p>
+                  <div class="divider"></div>
+                  <p class="subtitle">
+                    By choosing a reputable charity as the recipient, donors
+                    support organizations committed to humanitarian causes. The
+                    benefits of Sadaqah extend to tangible improvements in the
+                    lives of those in need, ranging from funding healthcare
+                    services to providing education and disaster relief.
+                  </p>
+                  <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p>
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <h4 class="title">
+                      Donating to charity is a powerful way to make a positive
+                      impact on the world and help those in need. Sadaqah, or
+                      voluntary charity, holds a central place in Islamic
+                      teachings, promoting generosity and compassion.
+                    </h4>
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/sadaqah-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">donation</h4>
+                    <p class="pera">
+                      By choosing to give Sadaqah, you not only fulfill a key
+                      aspect of your faith but also contribute to the well-being
+                      of those in need. The act of giving, rooted in the
+                      principles of generosity and compassion, strengthens the
+                      bond among members of society and fosters a sense of unity
+                      and community.
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        Your donations can fund medical treatments, provide
+                        essential medications, and support healthcare facilities
+                        that offer free or subsidized care to the
+                        underprivileged.
+                      </li>
+                      <li class="list">
+                        Contributing to educational initiatives can help build
+                        schools, provide scholarships, and supply learning
+                        materials, ensuring that children and adults alike have
+                        access to quality education.
+                      </li>
+                      <li class="list">
+                        Sadaqah can be directed towards providing immediate
+                        assistance to those affected by natural disasters,
+                        including food, shelter, and medical care.
+                      </li>
+                    </ul>
+                    <p class="subtitle">
+                      Donations can support programs that provide food,
+                      clothing, and shelter to those living in poverty, helping
+                      them meet their basic needs and improve their quality of
+                      life
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >Can Sadaqah be given to non-Muslims?</button
+                  >
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, Sadaqah can be given to anyone in need, regardless of
+                    their religion. The purpose of Sadaqah is to help those who
+                    are suffering and to foster goodwill and compassion.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                    >What are some examples of Sadaqah?</button
+                  >
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Examples of Sadaqah include giving money to the poor,
+                    providing food and water to those in need, donating
+                    clothing, helping to build infrastructure like wells or
+                    schools, and even acts of kindness like smiling or helping
+                    someone carry their groceries.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >Can Sadaqah be given anonymously?</button
+                  >
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, Sadaqah can be given anonymously. In fact, giving
+                    anonymously is often encouraged as it helps to ensure that
+                    the charity is given purely for the sake of Allah and not
+                    for personal recognition or praise.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >Can non-monetary acts be considered Sadaqah?</button
+                  >
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, non-monetary acts can be considered Sadaqah. This
+                    includes acts like helping someone in need, volunteering
+                    time, providing knowledge, and even simple gestures like
+                    smiling at others.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

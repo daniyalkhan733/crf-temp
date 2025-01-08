@@ -1,0 +1,312 @@
+
+    
+    <div class="calculator-container">
+      <div class="income-section">
+        <h2 class="section-title">YOUR INCOME</h2>
+        <p class="section-description">Please enter any sources of income that you have:</p>
+        <form class="income-form">
+          <!-- Income Inputs -->
+          <div class="input-group">
+            <label class="input-label">Cash at Home / Bank</label>
+            <input type="number" id="cash" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Gold & Silver</label>    
+            <input type="number" id="gold" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Property (Other Than Home)</label>
+            <input type="number" id="property" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Pensions</label>
+            <input type="number" id="pension" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Shares</label>
+            <input type="number" id="shares" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Other Investments</label>
+            <input type="number" id="investments" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Money Owed To You</label>
+            <input type="number" id="owedMoney" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Business Value</label>
+            <input type="number" id="businessValue" class="input-field" placeholder="£ Amount">
+          </div>
+        </form>
+      </div>
+    
+      <div class="debt-section">
+        <h2 class="section-title">YOUR <span style="color:#1A6E9C">DEBTS</span></h2>
+        <p class="section-description">Please enter any debt that you have:</p>
+        <form class="debt-form">
+          <!-- Debt Inputs -->
+          <div class="input-group">
+            <label class="input-label">Business Debts</label>
+            <input type="number" id="businessDebt" class="input-field" placeholder="£ Amount">
+          </div>
+          <div class="input-group">
+            <label class="input-label">Debt</label>
+            <input type="number" id="debt" class="input-field" placeholder="£ Amount">
+          </div>
+        </form>
+        <h2 class="section-title pt-4">Calculate</h2>
+        <p class="section-description">Breakdown of your amount due:</p>
+        <div class="input-group">
+            <label class="input-label">Total Assets Amount</label>
+            <p id="total-assets">£ 0.00</p>
+          </div> <div class="input-group">
+            <label class="input-label">Total Debt Amount</label>
+            <p id="total-debt">£ 0.00</p>
+          </div>
+        <div class="input-group">
+          <label class="input-label">Total Zakatable Amount</label>
+          <p id="total-zakat">£ 0.00</p>
+        </div>
+        <div class="btn-div">
+          <button class="calculate-btn" id="calculate-btn">
+            PAY ZAKAT</button>
+        </div>
+        <div class="note-div">
+          <p class="note">
+            Zakat is calculated according to the Gold or Silver Nisab levels. Due to the high price of Gold compared to the price of Silver, Muslim Charity uses the Silver Nisab level to calculate Zakat so that maximum assistance is provided to the poor and needy as Zakat is to be calculated with the best interests of the poor and needy beneficiaries in mind.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script is:inline>
+        const calculateBtn = document.getElementById('calculate-btn');
+        // Profit Values
+        const totalZakat = document.getElementById('total-zakat');
+        const cashValue = document.getElementById('cash');
+        const goldValue = document.getElementById('gold');
+        const propertyValue = document.getElementById('property');
+        const pensionValue = document.getElementById('pension');
+        const sharesValue = document.getElementById('shares');
+        const investmentsValue = document.getElementById('investments');
+        const owedMoneyValue = document.getElementById('owedMoney');
+        const businessValue = document.getElementById('businessValue');
+        const totalAssets = document.getElementById('total-assets');
+        // Loss Values
+        const businessDebtValue = document.getElementById('businessDebt');
+        const debtValue = document.getElementById('debt');
+        const totalDebt = document.getElementById('total-debt');
+    
+        const totalProfit = () => {
+            const cash = parseFloat(cashValue.value) || 0;
+            const gold = parseFloat(goldValue.value) || 0;
+            const property = parseFloat(propertyValue.value) || 0;
+            const pension = parseFloat(pensionValue.value) || 0;
+            const shares = parseFloat(sharesValue.value) || 0;
+            const investments = parseFloat(investmentsValue.value) || 0;
+            const owedMoney = parseFloat(owedMoneyValue.value) || 0;
+            const business = parseFloat(businessValue.value) || 0;
+    
+            const total = cash + gold + property + pension + shares + investments + owedMoney + business;
+            return total;
+        };
+    
+        const totalLoss = () => {
+            const businessDebt = parseFloat(businessDebtValue.value) || 0;
+            const debt = parseFloat(debtValue.value) || 0;
+    
+            const total = businessDebt + debt;
+            return total;
+        };
+    
+        const calculateZakat = () => {
+            const profit = totalProfit();
+            const loss = totalLoss();
+            const total = profit - loss;    
+            const zakat = total * 0.025;
+            totalZakat.textContent = `£ ${zakat.toFixed(2)}`;
+            totalAssets.textContent = `£ ${profit.toFixed(2)}`;
+            totalDebt.textContent = `£ ${loss.toFixed(2)}`;
+        };
+
+        calculateBtn.addEventListener('click', validateAndRedirect);
+
+        function validateAndRedirect() {
+            const profit = totalProfit();
+            const loss = totalLoss();
+            const total = profit - loss;    
+            const zakat = total * 0.025;
+            if (zakat > 0) {
+                // let url = ;
+                window.location.href = `https://crf-donate.tscube.co.in/zakat-donate?zakat_main=0&amount=${zakat.toFixed(2)}`;
+            } else {
+                alert("You do not have to pay Zakat");
+            }
+        }
+    
+        // Attach event listeners to all input fields
+        const inputFields = [
+            cashValue,
+            goldValue,
+            propertyValue,
+            pensionValue,
+            sharesValue,
+            investmentsValue,
+            owedMoneyValue,
+            businessValue,
+            businessDebtValue,
+            debtValue,
+        ];
+    
+        inputFields.forEach(input => {
+            input.addEventListener('input', calculateZakat);
+        });
+    
+        // Initial calculation
+        // calculateZakat();
+    </script>
+    <style>
+        /* styles.css */
+        body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f6f8;
+        }
+        
+        .calculator-container {
+          display: flex;
+          max-width: 1200px;
+          margin: 40px auto;
+          background-color: #ffffff;
+          border-radius: 12px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+        }
+        
+        .income-section,
+        .debt-section {
+          flex: 1;
+          padding: 40px 20px 40px 20px;
+          box-sizing: border-box;
+          background-color: #EFF2F4;
+        }
+        
+        .section-title {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #333333;
+          margin-bottom: 10px;
+        }
+        
+        .section-description {
+          font-size: 1rem;
+          color: #666666;
+          margin-bottom: 20px;
+        }
+        
+        .input-group {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 20px;
+        }
+        
+        .input-label {
+          width: 30%;
+          font-size: 1rem;
+          color: #333333;
+        }
+        
+        .input-field {
+          width: 70%;
+          padding: 10px;
+          font-size: 1rem;
+          border: 1px solid #cccccc;
+          border-radius: 6px;
+          text-align: left;
+          background-color: #f9f9f9;
+        }
+        
+        .input-field::placeholder {
+          color: #aaaaaa;
+        }
+        
+        .calculate-btn {
+          width: 50%;
+          padding: 12px;
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: white;
+          background-color: #1A6E9C;      
+          border: #1A6E9C 2px solid;
+          border-radius: 35px;
+          text-align: center;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+        .calculate-btn a {
+    
+          color: white;
+          background-color: #1A6E9C;      
+    
+        }
+        .calculate-btn:hover a {
+          background-color: white;
+          color: #1A6E9C;
+          transition: 0.3s;
+        }
+        .calculate-btn:hover {
+          background-color: white;
+          color: #1A6E9C;
+          border: #1A6E9C 2px solid;
+          transition: 0.3s;
+        }
+        
+        .note {
+          font-size: 0.9rem;
+          color: #666666;
+          line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+          .calculator-container {
+            flex-direction: column;
+          }
+        
+          .input-group {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .input-label,
+          .input-field {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+        
+          .income-section,
+          .debt-section {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #EFF2F4;
+          }
+        }
+        
+        .btn-div {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 20px;
+        }
+        
+        .note-div {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          background-color: white;
+          border-radius: 30px;
+        }
+        </style>
+    

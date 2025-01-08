@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <style>
+        .breadcrumb-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+      </style>
+        <!-- Breadcrumb Area S t a r t -->
+        <section class="breadcrumb-section breadcrumb-bg">
+          <div class="container">
+            <div class="breadcrumb-text">
+              <nav aria-label="breadcrumb" class="breadcrumb-nav wow fadeInUp" data-wow-delay="0.0s">
+                <ul class="breadcrumb listing">
+                  <li class="breadcrumb-item single-list"><a href="/" class="single">Home</a></li>
+                  <li class="breadcrumb-item single-list" aria-current="page"><a href="/terms-and-conditions" class="single">Terms & Conditions</a></li>
+                </ul>
+              </nav>
+              <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Terms & Conditions</h1>
+            </div>
+          </div>
+        </section>
+    <div class="blog-info px-5 pt-5">
+        <div class="blog-info-title">
+            <section>
+                <h3>Overview</h3>
+                <p>
+                    1. By using this site, you accept these terms and conditions
+                    as of the date of your first visit.<br />2. Care and Relief
+                    Foundation (CRF) reserves the right to modify these terms at
+                    any time.<br />3. If you do not fully accept these terms,
+                    you must stop using this site immediately.<br />4. These
+                    terms are governed by the laws of England and Wales. Any
+                    disputes will be handled exclusively by the Courts of
+                    England and Wales.
+                </p>
+            </section>
+            <br />
+            <section>
+                <h3>Accessing the Site</h3>
+                <p>
+                    CRF does not guarantee that the website will operate without
+                    errors or that any defects will be fixed, nor does it ensure
+                    that the site is free from viruses or bugs.<br />You agree
+                    to use this site only for lawful purposes and in a way that
+                    does not infringe on the rights of others or restrict their
+                    enjoyment of the site.<br />All content related to CRF is
+                    provided "as is" without any guarantees or endorsements.<br
+                    />This site may contain links to third-party websites for
+                    your information. CRF does not take responsibility for the
+                    accuracy of these sites as we have no control over their
+                    content. We are not liable for any loss or damage resulting
+                    from accessing these links. Please direct any concerns about
+                    external links to us via our general enquiry contact form or
+                    email info@careandrelief.uk.<br />You may link to our web
+                    pages fairly and legally without damaging our reputation,
+                    but you must not imply any endorsement or association by
+                    CRF. Our site must not be framed on any other site. We may
+                    revoke linking permissions at any time without notice.<br
+                    />The materials on this site are provided without warranties
+                    regarding their accuracy. To the extent permitted by law, we
+                    and our affiliates exclude all conditions, warranties, and
+                    terms that might be implied by law, along with any liability
+                    for loss or damage incurred by users in connection with the
+                    site.<br />This exclusion does not affect our liability for
+                    fraudulent misrepresentation or other fundamental
+                    misrepresentation.
+                </p>
+            </section>
+            <br />
+            <section>
+                <h3>Refund Policy</h3>
+                <p>
+                    At Care and Relief Foundation, we strive to provide a smooth
+                    experience, but we understand that mistakes can occur. Under
+                    Charity Law, charities cannot refund donations except in
+                    specific circumstances. All refunds will be processed using
+                    the original payment method.
+                </p>
+                <p>
+                    <strong>Note:</strong> Cash donations will only be refunded if
+                    the original receipt is provided, and refunds will be issued
+                    by cheque only.
+                </p>
+            </section>
+            <br />
+            <section>
+                <h3>Copyright Restrictions</h3>
+                <p>
+                    Commercial use or publication of any materials displayed on
+                    this site is prohibited without prior authorization from
+                    Care and Relief Foundation. Nothing on this site grants you
+                    a license to use any displayed materials.
+                </p>
+                <p>
+                    Documents may be copied for personal use only if the
+                    copyright and source information are retained, no
+                    modifications are made, and the document is copied in full.
+                    All rights to these documents are reserved, and permission
+                    to copy must be requested from the copyright owners.
+                </p>
+            </section>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <!-- blog info -->
+</Layout>

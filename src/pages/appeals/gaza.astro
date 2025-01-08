@@ -1,0 +1,339 @@
+---
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Support Gaza Emergency Appeal With Care And Relief UK ";
+const description = "Help Gaza with Care and Relief UK's Gaza Emergency Appeal. Donate to Palestine for urgent relief. Support Palestine Emergency Appeal now!";
+const pageImage ="";
+const keywords = "Donate To Gaza Palestine,Donate To Gaza,Palestine Emergency Appeal,Donate Palestine,Donate To Palestine";
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <style>
+      .breadcrumb-bg::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("/assets/images/breadcrumb/gaza-bg.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 100%;
+opacity: 1;
+-webkit-transition: opacity 0.3s ease;
+transition: opacity 0.3s ease;
+z-index: -1;
+}
+    </style>
+    <!-- Breadcrumb Area S t a r t -->
+    <section class="breadcrumb-section breadcrumb-bg">
+      <div class="container">
+        <div class="breadcrumb-text">
+          <nav
+            aria-label="breadcrumb"
+            class="breadcrumb-nav wow fadeInUp"
+            data-wow-delay="0.0s"
+          >
+            <ul class="breadcrumb listing">
+              <li class="breadcrumb-item single-list">
+                <a href="/" class="single">Home</a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals" class="single"
+                  >Appeals
+                </a>
+              </li>
+              <li class="breadcrumb-item single-list" aria-current="page">
+                <a href="/appeals/gaza" class="single"
+                  >Gaza Appeal
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Gaza Emergency</h1>
+        </div>
+      </div>
+    </section>
+    <!-- End-of Breadcrumb Area -->
+    <section>
+    <DonationCard programId={[11, 12, 13,]} />
+  </section>
+    <section class="section-padding">
+      <div class="container mt-5">  
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/gaza-4.jpg"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center ">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600">Our Impact</span>
+                <h2 class="title font-700 pb-15">Understanding the Gaza Emergency: Humanitarian Crisis in the
+                  Palestinian Territory</h2>
+                <p class="pera-subtitle mb-15">The Gaza Strip, a densely populated Palestinian territory, has
+                  been facing an ongoing humanitarian emergency due to a
+                  combination of factors, including conflict, blockade, and
+                  socio-economic challenges. The situation has been exacerbated by
+                  recurrent cycles of violence, resulting in significant loss of
+                  life, destruction of infrastructure, and displacement of
+                  civilians. <br> <br>The blockade imposed by Israel, in collaboration with Egypt,
+                  restricts the movement of goods and people in and out of Gaza,
+                  severely limiting access to essential goods, services, and
+                  medical supplies. This blockade, in place since 2007, has led to
+                  high unemployment rates, food insecurity, inadequate healthcare,
+                  and a lack of access to clean water and sanitation facilities,
+                  exacerbating the humanitarian crisis in the region.</p>
+                <p class="pera-subtitle"></p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a href="https://crf-donate.tscube.co.in/" class="btn btn-primary-fill">Donate Now</a>
+              </div>
+             
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=FUo1iFtVdVE66EWs"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">
+                    Responding to the Gaza Emergency: International Aid and
+                    Relief Efforts
+                  </h4>
+                  <p class="subtitle">
+                    International organizations, NGOs, and humanitarian agencies
+                    have been actively engaged in providing assistance and
+                    relief to the people of Gaza. Emergency aid includes medical
+                    supplies, food aid, shelter assistance, and psychosocial
+                    support for affected populations.
+                  </p>
+                  <div class="divider"></div>
+                  <p class="subtitle">
+                    These efforts aim to alleviate the suffering of civilians,
+                    particularly women, children, and the elderly, who are
+                    disproportionately affected by the crisis. Despite
+                    challenges posed by access restrictions and security
+                    concerns, humanitarian actors are working tirelessly to
+                    ensure the delivery of aid to those in need.
+                  </p>
+                  <p class="subtitle">
+                    Coordination between various stakeholders, including
+                    governments, UN agencies, and local NGOs, is crucial to
+                    effectively address the multifaceted needs of the population
+                    and mitigate the impact of the emergency.
+                  </p>
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <h4 class="title">
+                      Addressing the Root Causes of the Gaza Emergency: Pathways
+                      to Sustainable Solutions
+                    </h4>
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/gaza-1.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/gaza-2.jpg"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/gaza-3.jpg"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">donation</h4>
+                    <p class="pera">
+                      While emergency aid is essential for immediate relief,
+                      addressing the root causes of the Gaza emergency requires
+                      a comprehensive approach that addresses underlying
+                      political, economic, and social factors.Sustainable
+                      solutions must prioritize the protection of human rights,
+                      adherence to international law, and the pursuit of a just
+                      and lasting resolution to the Israeli-Palestinian
+                      conflict.
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        Resolving the Israeli-Palestinian conflict is
+                        fundamental to addressing the root causes of the Gaza
+                        emergency.
+                      </li>
+                      <li class="list">
+                        Political dialogue, negotiation, and compromise are
+                        essential for reaching a just and lasting solution that
+                        recognizes the rights and aspirations of both
+                        Palestinians and Israelis.
+                      </li>
+                      <li class="list">
+                        Internal divisions among Palestinian factions have
+                        contributed to the political and social instability in
+                        Gaza.
+                      </li>
+                    </ul>
+                    <p class="subtitle">
+                      By addressing these underlying factors and pursuing
+                      sustainable solutions, the international community can
+                      contribute to alleviating the suffering of the people of
+                      Gaza and fostering a more stable and prosperous future for
+                      the region.
+                    </p>
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto" >
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50 " style="text-align: center;">
+              <h2 class="title font-700 ">Frequently Asked Questions</h2>
+              <p class="pera" >When deciding which charity to donate to, it's important to do your search and find one that aligns with your values and interests.</p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Which animals are eligible for Qurbani?</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">The animals that can be sacrificed for Qurbani include sheep, goats, cows, and camels. These animals must be of a certain age and free from any significant defects. For instance, a sheep or goat should be at least one year old, while cows should be at least two years old.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Who is required to perform Qurbani?</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Qurbani is obligatory for every adult Muslim who possesses the financial means equivalent to or exceeding the Nisab (minimum amount of wealth that makes one liable to pay Zakat). This includes those who have savings exceeding their necessary expenses and basic needs.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">When should the Qurbani be performed?</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Qurbani is performed during the days of Eid al-Adha, specifically after the Eid prayer on the 10th of Dhul-Hijjah and up until the sunset of the 12th of Dhul-Hijjah. The act should be done as early as possible within these days.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed additional-styles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Is it permissible to perform Qurbani on behalf of someone else?</button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">Yes, it is permissible to perform Qurbani on behalf of someone else, such as a family member, deceased relative, or even the entire household. This act of sharing the reward can be done with the intention of including others in the blessings of the sacrifice.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

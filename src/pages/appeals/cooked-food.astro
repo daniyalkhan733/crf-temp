@@ -1,0 +1,522 @@
+---
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+const title = "Pay for Cooked Food Appeal | Feed the Hunger | CRF ";
+const description =
+  "Donate to Care and relief foundation Cooked Food Appeal to provide hot meals to low income families & children who lost their parents. Act Now";
+const keywords =
+  "Cooked Food,cooked food donation,cooked meal,feed the hungry,hot meal donation";
+const pageImage = "";
+---
+
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <main>
+    <Breadcrumb
+      title="Cooked Food Appeal"
+      link="/assets/images/appeals/masjid-4.png"
+      image="/assets/images/breadcrumb-bg.jpg"
+    />
+    <DonationCard
+      programId={[21, 36, 37, 38]}
+      title="CRF Cooked Food Appeal"
+      description="Food Donation"
+      style="col-xl-3 col-lg-3 col-md-6 col-sm-12"
+    />
+
+    <section class="section-padding">
+      <div class="container mt-5">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <!-- First Div: Image -->
+            <div class="col-12 col-md-5 mb-4 mb-md-0">
+              <img
+                src="/assets/images/appeals/masjid-4.png"
+                alt="Rounded Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-7 mb-4 align-self-center">
+              <div class="section-tittle mb-35">
+                <span class="sub-tittle text-capitalize font-600"
+                  >Our Impact</span
+                >
+                <h2 class="title font-700 pb-15">
+                  Distribute Hot Meals to Those Who Need It
+                </h2>
+                <p class="pera-subtitle mb-15">
+                  Food insecurity in the UK has escalated, leaving countless
+                  families in distress due to severe flooding and disrupted food
+                  supply chains. Over 2+ million children are now facing hunger,
+                  and for many low-income households, a single hot meal has
+                  becomev a rare comfort. Initiatives like <span
+                    style="font-weight: 600;">food donation</span
+                  > are now more crucial than ever to support those struggling to
+                  access basic necessities.
+                  <br /><br />
+                  Your support can make a difference. By donating our Care and Relief
+                  Foundation <span style="font-weight: 600;"
+                    >cooked food appeal</span
+                  >, you can provide hot meals to vulnerable families & the
+                  children who lost their parents, easing their hunger and
+                  offering them the Nutrition they need to survive.
+                </p>
+              </div>
+              <div class="col-lg-10 mt-10">
+                <a
+                  href="https://crf-donate.tscube.co.in/"
+                  class="btn btn-primary-fill"
+                  >Donate Now
+                </a>
+              </div>
+            </div>
+            <!-- Second Div: Heading and Paragraph -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-details top-bottom-padding2">
+      <div class="container">
+        <div class="row gy-24">
+          <div class="">
+            <div class="single-blog">
+              <div class="blog-img">
+                <div>
+                  <div class="video-section">
+                    <iframe
+                      width="100%"
+                      height="600px"
+                      id="video"
+                      src="https://www.youtube.com/embed/w7NuL2e3KiE?si=cBLdztiMqnAQMat9"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="blog-info">
+                <div class="blog-info-title">
+                  <div class="flex gap-16 mb-20 align-items-center"></div>
+                  <h4 class="title">Feed the Hunger</h4>
+                  <p class="subtitle">
+                    A simple act does not affect you entire life, but it bring
+                    relief and hope in the life they face most challenging
+                    moments. Feed the hunger is not only a charitable act but a
+                    way to earn massive spiritual reward. By donating your
+                    Sadaqah through care and relief foundation cooked food
+                    appeal, you can bring new hope to the families who need it
+                    the most.
+                  </p>
+                  <div class="divider"></div>
+
+                  <!-- <p class="subtitle">
+                    In addition to these benefits, contributing to charity
+                    through Sadaqah also plays a crucial role in fostering a
+                    sense of unity and community. The act of giving, rooted in
+                    the principles of generosity and compassion, not only
+                    positively impacts individuals in need but also strengthens
+                    the bond among members of society.
+                  </p> -->
+                  <div class="divider"></div>
+                  <div class="quote-with-text">
+                    <div class="quote">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="76"
+                        height="54"
+                        viewBox="0 0 76 54"
+                        fill="none"
+                      >
+                        <path
+                          d="M67.1429 32.4V30.4H65.1429H54.2857C49.3919 30.4 45.4286 26.4424 45.4286 21.6V10.8C45.4286 5.95763 49.3919 2 54.2857 2H65.1429C70.0366 2 74 5.95763 74 10.8V16.2V21.6V33.75C74 43.8236 65.7956 52 55.6429 52H54.2857C52.3776 52 50.8571 50.4724 50.8571 48.6C50.8571 46.7276 52.3776 45.2 54.2857 45.2H55.6429C61.9794 45.2 67.1429 40.0789 67.1429 33.75V32.4ZM23.7143 32.4V30.4H21.7143H10.8571C5.96336 30.4 2 26.4424 2 21.6V10.8C2 5.95763 5.96336 2 10.8571 2H21.7143C26.6081 2 30.5714 5.95763 30.5714 10.8V16.2V21.6V33.75C30.5714 43.8236 22.367 52 12.2143 52H10.8571C8.94907 52 7.42857 50.4724 7.42857 48.6C7.42857 46.7276 8.94907 45.2 10.8571 45.2H12.2143C18.5509 45.2 23.7143 40.0789 23.7143 33.75V32.4Z"
+                          stroke="#090E0D"
+                          stroke-width="4"></path>
+                      </svg>
+                    </div>
+                    <!-- <h4 class="title">
+                      Prophet (PBUH) saying: “Whoever builds a masjid for the
+                      sake of Allah, Allah will build for him a house in
+                      Paradise.”
+                    </h4> -->
+                  </div>
+                  <div class="d-flex gap-20">
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-1.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-2.png"
+                        alt="image"
+                      />
+                    </div>
+                    <div class="blog-multi-img">
+                      <img
+                        src="/assets/images/appeals/masjid-3.png"
+                        alt="image"
+                      />
+                    </div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      Why Donate to CRF's Cooked Food Project?
+                    </h4>
+                    <p class="pera">
+                      Our cooked food donation programme focuses on the most
+                      needy communities, especially in remote areas where access
+                      to food services is very less. Through your donation, we
+                      can deliver hot cooked meal to those who is in struggle,
+                      prioritizing widows, orphans, and families.
+                      <br /><br />By supporting care and relief foundation
+                      cooked food donation programme, you are not just offering
+                      hot cooked meal & hope but also you are offering greatly
+                      improving their health and overall well-being.
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;">Improve Health: </span>
+                        Your donation provides nutritious meals that help combat
+                        malnutrition, improving the health and well-being of vulnerable
+                        individuals, especially children and the elderly.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >Hope and Dignity:
+                        </span>
+                        By providing a hot meal, your support restores dignity to
+                        those suffering from hunger, giving them hope during difficult
+                        times of hardship.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >Nutritional Support :</span
+                        >
+                        Each meal offers essential nutrients, ensuring families receive
+                        balanced, healthy food that supports physical strength and
+                        daily energy levels for survival.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >Protection from begging :</span
+                        >
+                        Your contribution prevents families from resorting to begging,
+                        reducing their vulnerability to exploitation and providing
+                        them with the basic food they deserve.
+                      </li>
+                    </ul>
+
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      Ways to Donate for the Cooked Food Appeal
+                    </h4>
+                    <p class="pera">
+                      Your support is vital in providing nourishment to those in
+                      need. Here are the different ways you can donate and make
+                      a meaningful difference:
+                    </p>
+                    <ul class="bullet-list">
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >1- One-Time Donation:
+                        </span>
+                        A one-time donation ensures that individuals and families
+                        in need receive a hot, nutritious meal when they need it
+                        the most. Every contribution matters.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >2- Online Donations:
+                        </span>
+                        Donate easily and securely through our online platform. Whether
+                        it's a one-time or recurring donation, your online contribution
+                        helps provide immediate relief to those in need.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >3- Monthly Contribution:
+                        </span>
+                        By committing to a monthly donation, you can help provide
+                        continuous support, ensuring that no one goes without food.
+                        Your ongoing support brings hope every day.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >4- Zakat Donations :</span
+                        >
+                        Fulfill your Zakat obligation by donating to the Cooked Food
+                        Appeal. Your contribution helps feed the most vulnerable,
+                        improving their health and quality of life.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >5- Sadaqah Giving :</span
+                        >
+                        Give Sadaqah to provide essential meals to those suffering
+                        from hunger. Your act of charity brings both physical relief
+                        and spiritual rewards.
+                      </li>
+                      <li class="list">
+                        <span style="font-weight: 700;"
+                          >6- Corporate Donations :</span
+                        >
+                        Partner with CRF as a corporate sponsor. Your company's donation
+                        can feed hundreds of families and make a lasting difference
+                        in the lives of those struggling with hunger).
+                      </li>
+                    </ul>
+                    <div class="divider"></div>
+                  </div>
+                  <div class="donation-content">
+                    <h4 class="title">
+                      What Qur'an Says? About Those Who Feed Others
+                    </h4>
+                    <p class="pera">
+                      <span style="font-size: larger;">
+                        “Give food, out of love for Him, to the poor and the
+                        orphan and the captive, [saying] “We feed you, for
+                        Allah’s pleasure only — We desire from you neither
+                        reward nor thanks.” (Holy Qur’an 76:5-12).</span
+                      >
+
+                      <br /><br />
+                      Since 2016, Care and Relief Foundation has been dedicated to
+                      providing freshly cooked meals to thousands of individuals
+                      and families across the UK and beyond. With a strong network
+                      of local teams, supply chains, and deep knowledge of the communities
+                      we serve, we are able to reach even the most remote areas where
+                      hunger is most critical. <br /><br />
+                      Our food-related campaigns are dedicated to Tackling the severe
+                      hunger crisis affecting millions of families in the UK, where
+                      poverty and malnutrition continue to destroy lives. Thanks
+                      to your generous cooked food donations, including Sadaqah and
+                      Zakat, we've been able to bring immediate relief to those are
+                      suffering. By providing nourishing cooked meals, we are feeding
+                      the weak, weary, and malnourished, bringing hope and restoring
+                      dignity to those who need it most. <br /><br />
+                      Care and Relief Foundation's Feed the Hungry program is providing
+                      essential, nutritious meals to thousands of people, alleviating
+                      food insecurity and improving their quality of life. Your donations
+                      whether in the form of Sadaqah or Zakat directly support this
+                      initiative. Every contribution ensures that cooked meals reach
+                      those most in need, making a significant difference in their
+                      lives and health.
+                    </p>
+
+                    <div class="divider"></div>
+                  </div>
+                </div>
+                <!-- blog info -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        @media screen and (max-width: 768px) {
+          #video {
+            height: 300px;
+          }
+        }
+      </style>
+    </section>
+    <!-- Faq section started -->
+    <section class="question-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col my-auto">
+            <!-- Section Tittle -->
+            <div class="section-tittle mb-50" style="text-align: center;">
+              <h2 class="title font-700">Frequently Asked Questions</h2>
+              <p class="pera">
+                When deciding which charity to donate to, it's important to do
+                your search and find one that aligns with your values and
+                interests.
+              </p>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                    >What is the Cooked Food Appeal?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Cooked Food Appeal is a humanitarian initiative by the
+                    Care & Relief Foundation to provide freshly prepared,
+                    nutritious meals to vulnerable individuals and families,
+                    especially those in poverty, homelessness, or crisis
+                    situations.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I donate to the Cooked Food Appeal?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    You can donate to the Cooked Food Appeal through our website
+                    or by <a href="/contact-us">contacting us</a>. Your donation
+                    will directly fund the preparation and distribution of hot
+                    meals to those in need.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                    >Who benefits from the Cooked Food Appeal?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    The Cooked Food Appeal supports individuals and families
+                    facing food insecurity, including homeless people,
+                    low-income families, refugees, the elderly, and communities
+                    affected by emergencies or natural disasters.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                    >What kind of meals are provided through the Cooked Food
+                    Appeal?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    We provide balanced, nutritious, and culturally appropriate
+                    meals, including vegetarian and non-vegetarian options.
+                    Meals typically include rice, bread, vegetables, proteins,
+                    and fruits to ensure proper nourishment.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed additional-styles"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                    >How are the meals prepared and distributed?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Meals are prepared by local kitchens or partner
+                    organizations under strict hygiene standards. They are then
+                    distributed through volunteers, local centers, or directly
+                    to those in need, ensuring they reach the most vulnerable
+                    communities.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main></Layout
+>

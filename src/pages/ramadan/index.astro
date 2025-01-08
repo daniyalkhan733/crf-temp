@@ -1,0 +1,575 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import RamadanTable from "../../components/RamadanTable.astro";
+import { SEO } from "astro-seo";
+const title = "Ramadan Appeal 2025| Donate to Provide Food Pack & Iftar Box";
+const description =
+  "Join CRF Ramadan appeal to provide Food Pack & Iftar boxes to Support needy families through our charity. Donate Now to make a positive impact!";
+const pageImage = "";
+const keywords =
+  "ramadan 2025 ,  ramadan donation, ramadan appeal, ramadan charity, donate in ramadan";
+
+---
+<SEO
+  title={title}
+  description={description}
+  canonical=""
+  openGraph={{
+    basic: {
+      title: `${title}`,
+      type: "website",
+      image: `${pageImage? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+    },
+    optional: {
+      description: `${description}`,
+    },
+  }}
+  twitter={{
+    creator: "@jonasmerlins1",
+  }}
+  extend={{
+    // extending the default link tags
+    link: [{ rel: "icon", href: "/favicon.png" }],
+    // extending the default meta tags
+    meta: [
+      {
+        name: "twitter:image",
+        content: `${pageImage ? pageImage : "/assets/images/logo/Logo-CRF.png"}`,
+      },
+      {
+        name: "twitter:title",
+        content: `${title}`,
+      },
+      {
+        name: "twitter:description",
+        content: `${description}`,
+      },
+      { name: "keywords", content: `${keywords}` },
+    ],
+  }}
+/>
+<Layout>
+  <style>
+    .breadcrumb-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("/assets/images/breadcrumb/about-bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      opacity: 1;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+  </style>
+  <section class="breadcrumb-section breadcrumb-bg">
+    <div class="container">
+      <div class="breadcrumb-text">
+        <nav
+          aria-label="breadcrumb"
+          class="breadcrumb-nav wow fadeInUp"
+          data-wow-delay="0.0s"
+        >
+          <ul class="breadcrumb listing">
+            <li class="breadcrumb-item single-list">
+              <a href="/" class="single">Home</a>
+            </li>
+            <!-- <li class="breadcrumb-item single-list" aria-current="page">
+              <a href="/ramadan" class="single">Appeals</a>
+            </li> -->
+            <li class="breadcrumb-item single-list" aria-current="page">
+              <a href="/ramadan" class="single">Ramadan </a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="title wow fadeInUp" data-wow-delay="0.1s">Ramadan</h1>
+      </div>
+    </div>
+  </section>
+  <div
+    class="section-tittle mb-50 container shadow-lg p-5"
+
+    style="text-align: center; margin-top: 100px;"
+  >
+    <div class="container no-top">
+      <div class="row justify-content-center">
+    
+
+        <!-- Left column vertically centered -->
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center text-center"
+        >
+          <p
+            class="lead"
+            style="font-size: 40px; font-weight: 700; color: black;"
+          >
+          The Spirit of Giving in <br> Ramadan 2025
+        </p>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-md-6 text-justify">
+          <p class="lead">
+            Ramadan in the year of 2025 is a time of reflection, devotion, and <br> generosity. It is a sacred & the purest month of the year when Muslims around the world come together to strengthen their faith and support those in need. Giving in Ramadan is an essential part of our spiritual journey, as it brings blessings to the giver and hope to the receiver.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <DonationCard programId={[11, 12, 13]} />
+  <section class="">
+    <div class="container mt-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-center" >
+          <!-- First Div: Image -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0" style="padding-left: 20px;">
+            <img
+              src="/assets/images/appeals/sadaqah-4.jpg"
+              alt="Rounded Image"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6 mb-4 align-self-center " style="padding-left: 20px;">
+            <div class="section-tittle mb-35">
+              
+              <h2 class="title font-700 pb-15">Why Your Ramadan Donation Matters
+              </h2>
+              <p class="pera-subtitle mb-15">
+                The act of giving is deeply rooted in the essence of Ramadan in the form of Zakat, Fidya Kaffarah, Fitrana and etc. It is a month that teaches compassion, patience, and the importance of sharing with others in Islam. However, for many families, observing Ramadan can be challenging due to financial problems and more. That's where your Ramadan donation plays a crucial role.
+
+              </p>
+              <p class="pera-subtitle"></p>
+            </div>
+            <div class="col-lg-10 mt-10">
+              <a
+                href="https://crf-donate.tscube.co.in/"
+                class="btn btn-primary-fill">Donate Now</a
+              >
+            </div>
+          </div>
+          <!-- Second Div: Heading and Paragraph -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container mt-5">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md-7 mb-4 align-self-center" style="padding-left: 20px;">
+            <div class="section-tittle mb-35">
+              
+              <h2 class="title font-700 pb-15">CRF's Ramadan Appeal: <br> How We Make a Difference
+
+
+              </h2>
+              <p class="pera-subtitle mb-15">
+                CRF has been at the forefront of Ramadan charity for years, working tirelessly to support communities in need. Our Ramadan Appeal 2025 is here to maximize the impact of your generosity, ensuring that every donation of yours reaches those who need it the most.
+
+
+
+              </p>
+              
+              <p class="pera-subtitle"></p>
+            </div>
+            <div class="col-lg-10 mt-10">
+              <a
+                href="https://crf-donate.tscube.co.in/"
+                class="btn btn-primary-fill">Donate Now</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-5 mb-4 mb-md-0" style="padding-left: 20px;">
+            <img
+              src="/assets/images/appeals/sadaqah-4.jpg"
+              alt="Rounded Image"
+              class="img-fluid rounded"
+            />
+          </div>
+          <section class="helpful-area-three section-padding">
+            <div class="container">
+              <div class="row g-24">
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                  <div class="helpful-card wow fadeInUp custom-shadow" data-wow-delay="0.0s">
+                   
+                    <div class="helpful-card-caption">
+                      <h4 class="caption-title" style="background-color: white !important; color:black">Ramadan Food Packs</h4>
+                      <p class="caption-para px-4">
+                        Each Food Pack is thoughtfully prepared with essential items to meet diverse dietary needs, supporting underprivileged families in preparing nutritious meals throughout Ramadan.
+                      </p>
+                 
+                    </div>
+                    <div class="number-watermark" style="color: rgba(221, 221, 221, 0.1) !important;">
+                      <h4 class="number" style="color: rgba(221, 221, 221, 0.1) !important;">01</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                  <div class="helpful-card wow fadeInUp custom-shadow "  data-wow-delay="0.0s">
+                    
+                    <div class="helpful-card-caption">
+                      <h4 class="caption-title" style="background-color: white !important; color:black">Ready-to-Eat Iftar Boxes</h4>
+                      <p class="caption-para px-4">  
+                        <span class="font-weight-bold">Our Iftar Boxes provide ready-to-eat meals for those in need, featuring essentials like dates, water, fruits, and cooked meals for a convenient and nourishing Iftar experience.
+      
+      
+                      </p>
+                  
+                    </div>
+                    <div class="number-watermark" style="color: rgba(221, 221, 221, 0.1) !important;">
+                      <h4 class="number" style="color: rgba(221, 221, 221, 0.1) !important;">02</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                  <div class="helpful-card wow fadeInUp custom-shadow "  data-wow-delay="0.0s">
+                   
+                    <div class="helpful-card-caption">
+                      <h4 class="caption-title" style="background-color: white !important; color:black">Community-Centered Approach</h4>
+                      <p class="caption-para px-4">  
+                        <span class="font-weight-bold">We collaborate with local partners in the and have volunteers to identify and reach the most vulnerable families. This ensures that your donation has a direct and meaningful impact.
+      
+       
+      
+                      </p>
+                 
+                    </div>
+                    <div class="number-watermark" style="color: rgba(221, 221, 221, 0.1) !important;">
+                      <h4 class="number" style="color: rgba(221, 221, 221, 0.1) !important;">03</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-lg-6">
+                  <div class="helpful-card wow fadeInUp custom-shadow "  data-wow-delay="0.0s">
+                  
+                    <div class="helpful-card-caption">
+                      <h4 class="caption-title" style="background-color: white !important; color:black">Transparency and Accountability</h4>
+                      <p class="caption-para px-4">  
+                        <span class="font-weight-bold">At CRF, we value your trust. We provide detailed reports and updates so you can see how and where your Ramadan donation is making a difference.
+      
+            
+      
+                      </p>
+                   
+                    </div>
+                    <div class="number-watermark" style="color: rgba(221, 221, 221, 0.1) !important;">
+                      <h4 class="number" style="color: rgba(221, 221, 221, 0.1) !important;">04</h4>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container mt-5">
+      <div
+        class="section-tittle container p-2 mt-4"
+        style="text-align: center;"
+      >
+        <h2 class="title font-700" style="color: #156E9D;">
+          Ramadan Timetable 2025
+        </h2>
+        <p class="pb-2">
+          Stay organized and plan your prayers, Suhoor, and Iftar with our
+          detailed Ramadan timetable to make the most of this holy month.
+        </p>
+        <div class="text-center pt-4">
+          <a href="/assets/crf-ramadan-calendar.pdf" target="_blank" class="btn-primary-fill pill-btn">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-download"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                ></path>
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+                ></path>
+              </svg></span
+            > &nbsp Download Ramadan Time Table 2025</a
+          >
+        </div>
+      </div>
+      <RamadanTable />
+    </div>
+  </section>
+<div
+class="section-tittle container p-2"
+style="text-align: center;"
+>
+
+<a
+  href="/ramadan/ramadan-timetable"
+  class="btn-primary-fill pill-btn"
+>
+Explore More About TimeTable</a
+>
+</div>
+
+<section class="section-padding">
+  <div class="container mt-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6 mb-4 align-self-center" style="padding-left: 20px;">
+          <div class="section-tittle mb-35">
+            
+            <h2 class="title font-700 pb-15">Ways to Donate in Ramadan 2025
+
+            </h2>
+            <p class="pera-subtitle mb-15">
+              Making a Ramadan donation through CRF is simple and flexible. We’ve made the process easy so that you can focus on the joy of giving. Here are the ways you can contribute to our Ramadan Appeal 2025
+
+
+            </p>
+            <ol class=" list-group-numbered " style="padding-left: 0px !important;">
+              <li class="list-group-item">
+                <strong>Online Donations:</strong> Visit our <a href="/" class="text-primary text-decoration-underline">secure website</a> to make your contribution. Choose from a range of donation options, including Food Packs, Iftar Boxes, or general support for Ramadan 2025.
+              </li>
+              <li class="list-group-item">
+                <strong>Monthly Contributions:</strong> Set up a recurring donation to extend your impact beyond Ramadan. This ensures continuous support for families in need throughout the year.
+              </li>
+              <li class="list-group-item">
+                <strong>Corporate Sponsorships:</strong> Businesses can partner with CRF to sponsor large-scale distributions. This is a great way to fulfill corporate social responsibility while making a significant impact.
+              </li>
+              <li class="list-group-item">
+                <strong>Zakat Donations:</strong> Fulfill your Zakat obligation by contributing to our Ramadan Appeal. Our zakat appeal aligns with the principles of Zakat, ensuring your donation is used in the most effective way. You can <a href="/appeals/zakat-calculator" class="text-primary text-decoration-underline">calculate your zakat</a> as well to understand the exact amount to pay.
+              </li>
+              <li class="list-group-item">
+                <strong>Spread the Word:</strong> Even if you're unable to donate, you can support our cause by sharing our Ramadan Appeal with your friends and family. Together, we can create an impactful effect of kindness.
+              </li>
+            </ol>
+            <p class="pera-subtitle"></p>
+          </div>
+          <div class="col-lg-10 mt-10">
+            <a
+              href="https://crf-donate.tscube.co.in/"
+              class="btn btn-primary-fill">Donate Now</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4 mb-md-0" style="padding-left: 20px;">
+          <img
+            src="/assets/images/appeals/sadaqah-4.jpg"
+            alt="Rounded Image"
+            class="img-2 rounded"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <div
+    class="section-tittle mb-50 container p-2 mt-4"
+    style="text-align: center;"
+  >
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2 class="title font-700" style="color: #156E9D;">
+          Make a Positive Impact with Your Ramadan Charity  
+        </h2>
+
+        <!-- Left column vertically centered -->
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center text-center"
+        >
+          <p class="lead">
+             <span style="font-weight: 700; color:black;">A Mother's Gratitude:</span> Last Ramadan, your donations helped Tasleem, a widowed mother of three, who had no means to provide Iftar for her children. With the support of CRF's Food Pack program, Tasleem's family was able to observe Ramadan with dignity and peace of mind.
+          </p>
+        </div>
+
+        <!-- Right column -->
+        <div class="col-md-6 text-center">
+          <p class="lead">
+           <span style="font-weight: 700; color:black;">Empowering Communities:</span>In rural areas where food insecurity is rampant, our Iftar Boxes have brought communities together. The meals not only nourish but also create a sense of belonging and togetherness during this sacred month.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    /* General Styles */
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .section-padding {
+      padding: 40px 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Title and Description */
+    .nisab-title {
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      color: #156e9d;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .nisab-title-2 {
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: black;
+      font-weight: 200;
+      margin-bottom: 10px;
+    }
+
+    .nisab-div {
+      text-align: center;
+    }
+
+    .nisab-description {
+      font-size: 1rem;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .nisab-subtitle {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #333333;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Nisab Cards */
+    .nisab-cards {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .nisab-card {
+      flex: 1;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #156e9d;
+      background-color: #f9f9f9;
+    }
+
+    .nisab-card p {
+      font-size: 1rem;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+
+    .nisab-card h5 {
+      font-size: 1.4rem;
+      color: #156e9d;
+      margin: 0;
+    }
+
+    .nisab-card span {
+      font-size: 0.9rem;
+      color: #999999;
+    }
+
+    /* Notes and Button */
+    .nisab-note {
+      font-size: 1rem;
+      color: #156e9d;
+      margin-bottom: 15px;
+    }
+
+    .nisab-footer {
+      font-size: 1rem;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary-fill {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ffffff;
+      background-color: #156e9d;
+      border: none;
+      border-radius: 35px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .calculate-btn-div {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .btn-primary-fill:hover {
+      background-color: #0f4d6d;
+    }
+
+    /* Image Styles */
+    .img-fluid {
+      max-width: 100%;
+    height: 322px;
+    border-radius: 12px;
+    width: 808px;
+    object-fit: cover;
+    }
+    .img-2 {
+      max-width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    width: 808px;
+    margin-bottom: 30px;
+
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nisab-cards {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 978px) {
+    .container {
+      padding:0;
+      margin:0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+
+ </style>
+</Layout>

@@ -1,0 +1,118 @@
+---
+// Import the fetchPrograms function
+import { fetchPrograms } from "./api.js";
+
+type Program = {
+  program_id: number;
+  program_name: string;
+  image: string;
+  program_image_flag: string;
+  program_rate_id: number | null;
+  program_rate: number | null;
+  pr_start_date: string | null;
+  pr_end_date: string | null;
+  country_id: number | null;
+  country_name: string | null;
+  any_amount: string;
+  program_is_animal: string;
+  other_amount: string;
+  donation_url: string;
+  direct_debit_url: string;
+  programId: number;
+};
+
+// Use fetchPrograms to get data
+const data = await fetchPrograms();
+const responseData: Program[] = data; // Assuming the response is an array of programs
+// var programId: any = [];
+var { programId , title="We Love To Help Poor" , description="Help & Donate Us Now" , style="col-xl-4 col-lg-4 col-md-6 col-sm-12" } = Astro.props;
+---
+
+<section
+  class="donate-section-two section-padding2"
+  style="padding-bottom: 50px !importants;"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-7">
+        <!-- Section Tittle -->
+        <div class="section-tittle text-center mb-50">
+          <span class="sub-tittle text-capitalize font-600"
+            >{title}</span
+          >
+          <h2 class="title font-700">{description}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row gy-24">
+      {
+        responseData
+          .filter(
+            (program) =>
+              !programId ||
+              !programId.length ||
+              programId.includes(program.program_id)
+          )
+          .slice(0, 8)
+          .map((program) => (
+            <div
+              key={program.program_id}
+              class={`view-wrapper ${style}`} 
+            >
+              <div
+                class="single-donate h-calc wow fadeInUp"
+                data-wow-delay="0.0s"
+              >
+                <div class="donate-img position-relative">
+                  <a href={program.donation_url}>
+                    {" "}
+                    <img class="w-100" src={program.image} alt="img" />{" "}
+                  </a>
+                  <div class="donate-badge">
+                    <p class="subtitle" style="color: white !important;">
+                      {program.country_name ? program.country_name : "Pakistan"}
+                    </p>
+                  </div>
+                </div>
+                <div class="donate-info">
+                  <div class=" justify-content-center align-items-center">
+                    <div class="donate-info-title">
+                      <h4
+                        class="title text-capitalize align-items-center"
+                        style="text-align: center;"
+                      >
+                        <a href={program.donation_url}>
+                          {program.program_name}
+                        </a>
+                      </h4>
+                      <div class="progress custom-progress-two">
+                        <div class="progress-bar" style="width: 100%"></div>
+                      </div>
+                      <div class="flex justify-content-center  mb-20">
+                        <div class="flex gap-20">
+                          <div class="charges">
+                            <h3 class="title font-500">{" "}
+                              {program.program_rate
+                                ? "£" + program.program_rate
+                                : "Any amount"}
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <a
+                        href={program.donation_url}
+                        class="btn donate-btn w-100"
+                      >
+                        Donate Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))
+      }
+    </div>
+  </div>
+</section>
